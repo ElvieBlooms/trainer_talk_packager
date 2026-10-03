@@ -42,13 +42,33 @@ async function prepare(modelId, dir) {
   if (!spec || (spec.kind !== "speech" && spec.kind !== "emotion")) throw new Error(`Unknown model ${modelId}.`);
   if (pipes[spec.kind] && pipes[spec.kind].modelId === modelId) return { modelId };
   if (FAKE) {
-    for (let i = 1; i <= 4; i++) {
-      send({ event: "progress", modelId, loaded: i * 25, total: 100 });
-      await new Promise((r) => setTimeout(r, 40));
+    if (!process.env.TTP_DEMO_MODELS) {
+      for (let i = 1; i <= 4; i++) {
+        send({ event: "progress", modelId, loaded: i * 25, total: 100 });
+        await new Promise((r) => setTimeout(r, 40));
+      }
+    } else {
+      log(`loading ${spec.label} on the CPU with 3 threads…`);
+      await new Promise((r) => setTimeout(r, 300));
+      log(`${spec.label} loaded in 2.4 s; memory in use 612 MB`);
     }
+    // Screenshot demo: canned answers keyed by clip length.
+    const demo = process.env.TTP_DEMO_MODELS ? JSON.parse(require("fs").readFileSync(process.env.TTP_DEMO_MODELS, "utf8")) : null;
+    const demoFor = (s) => demo && demo.byLength[s.length];
+    const others = ["neutral", "happy", "surprise", "sad"];
     pipes[spec.kind] = spec.kind === "speech"
-      ? { modelId, run: async (s) => ({ text: ` Fake words for ${s.length} samples.` }) }
-      : { modelId, run: async () => [{ label: "hap", score: 0.7 }, { label: "neu", score: 0.2 }, { label: "sad", score: 0.1 }] };
+      ? { modelId, run: async (s) => {
+          if (demo) await new Promise((r) => setTimeout(r, 120 + (s.length % 7) * 20)); // plausible timings
+          return { text: demoFor(s) ? ` ${demoFor(s).text}` : ` Fake words for ${s.length} samples.` };
+        } }
+      : { modelId, run: async (s) => {
+          if (demo) await new Promise((r) => setTimeout(r, 80 + (s.length % 5) * 10));
+          const d = demoFor(s);
+          if (!d) return [{ label: "hap", score: 0.7 }, { label: "neu", score: 0.2 }, { label: "sad", score: 0.1 }];
+          const rest = others.filter((x) => x !== d.emotion).slice(0, 2);
+          const top = 0.62 + (s.length % 30) / 100;
+          return [{ label: d.emotion, score: top }, { label: rest[0], score: (1 - top) * 0.7 }, { label: rest[1], score: (1 - top) * 0.3 }];
+        } };
     return { modelId };
   }
   await downloadModel(dir, spec, { onProgress: (p) => send({ event: "progress", modelId, file: p.file, loaded: p.loaded, total: p.total }) });
@@ -95,7 +115,7 @@ process.parentPort.on("message", async (e) => {
     if (msg.cmd === "probe") {
       const spec = ALL[msg.modelId];
       if (!spec) throw new Error(`Unknown model ${msg.modelId}.`);
-      const ready = FAKE ? false : isDownloaded(msg.dir, spec);
+      const ready = FAKE ? !!process.env.TTP_DEMO_MODELS : isDownloaded(msg.dir, spec);
       result = { downloaded: ready, sizeBytes: ready ? 0 : FAKE ? 150 * 1024 * 1024 : await remoteSize(spec) };
     } else if (msg.cmd === "prepare") {
       result = await prepare(msg.modelId, msg.dir);

@@ -140,7 +140,8 @@ label.inline select { width: auto; }
 .source { display: grid; grid-template-columns: minmax(0, 1fr) auto auto; gap: 12px; align-items: center; padding: 8px 0; border-bottom: 1px solid var(--line-soft); }
 .source-main { display: grid; gap: 2px; min-width: 0; }
 .source label.inline select { max-width: 190px; }
-.recipes li { display: flex; justify-content: space-between; align-items: center; gap: 12px; padding: 8px 0; border-bottom: 1px solid var(--line-soft); }
+.recipes > li { display: flex; justify-content: space-between; align-items: center; gap: 12px; padding: 8px 0; border-bottom: 1px solid var(--line-soft); }
+.recipes > li > div { flex: 1; min-width: 0; }
 .applied { margin: 8px 0 12px; padding: 8px 12px; border-left: 3px solid var(--confident); }
 .applied details { margin-top: 4px; }
 .applied li { font-family: var(--mono); font-size: 12px; }

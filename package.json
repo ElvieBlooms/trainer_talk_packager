@@ -1,7 +1,7 @@
 {
   "name": "trainer-talk-packager",
   "productName": "Trainer Talk Packager",
-  "version": "0.11.0",
+  "version": "0.11.1",
   "description": "Builds Trainer Talk voice packs from your own audio zips.",
   "main": "main.js",
   "license": "MIT",
@@ -14,7 +14,8 @@
     "dist:linux": "electron-builder --linux AppImage",
     "dist:win": "electron-builder --win nsis",
     "needed-zips": "node scripts/needed-zips.js",
-    "dist:mac": "electron-builder --mac dmg zip"
+    "dist:mac": "electron-builder --mac dmg zip",
+    "screenshots": "electron scripts/screenshots.js"
   },
   "build": {
     "appId": "io.github.elvieblooms.trainertalkpackager",

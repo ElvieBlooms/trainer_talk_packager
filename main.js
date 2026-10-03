@@ -607,7 +607,9 @@ handle("models:list", () => {
   const list = (group) => Object.entries(group).map(([id, m]) => ({ id, label: m.label, blurb: m.blurb, license: m.license, ramMB: m.ramMB }));
   const os = require("os");
   return {
-    memory: { totalMB: Math.round(os.totalmem() / 1048576), freeMB: Math.round(os.freemem() / 1048576) },
+    // The screenshot demo shows a typical machine, not the one it runs on.
+    memory: process.env.TTP_DEMO_MODELS ? { totalMB: 16384, freeMB: 11000 }
+      : { totalMB: Math.round(os.totalmem() / 1048576), freeMB: Math.round(os.freemem() / 1048576) },
     speech: list(SPEECH), emotion: list(EMOTION), matcher: list(MATCHER),
     selected: { speech: st.speech, emotion: st.emotion, matcher: st.matcher },
     matcherGpu: st.matcherGpu === true,

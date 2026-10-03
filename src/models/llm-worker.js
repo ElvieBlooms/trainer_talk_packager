@@ -104,6 +104,15 @@ async function prepare(modelId, dir, gpu) {
   if (!spec || spec.kind !== "matcher") throw new Error(`Unknown model ${modelId}.`);
   if (state && state.modelId === modelId && (state.fake || state.gpuWanted === gpu)) return { modelId, gpu: state.fake ? "fake" : state.llama.gpu || "cpu" };
   if (FAKE) {
+    if (process.env.TTP_DEMO_MODELS) {
+      log(`loading ${spec.label} on the CPU…`);
+      await new Promise((r) => setTimeout(r, 300));
+      log(`loaded ${spec.files[0]} on cpu in 6.8 s; memory in use 3104 MB`);
+      log("clip list for the matcher: 28 clips, 1012 tokens.");
+      log("reused the saved reading of the clip list (0.9 s instead of reading it again)");
+      state = { modelId, fake: true };
+      return { modelId, gpu: "cpu" };
+    }
     for (let i = 1; i <= 4; i++) { send({ event: "progress", modelId, loaded: i * 25, total: 100 }); await new Promise((r) => setTimeout(r, 40)); }
     state = { modelId, fake: true };
     return { modelId, gpu: "fake" };
@@ -219,6 +228,20 @@ async function suggest({ character, clips, slot }) {
     // Test hook: crash once, the way a graphics driver failure does.
     const marker = process.env.TTP_FAKE_CRASH_ONCE;
     if (marker && !require("fs").existsSync(marker)) { require("fs").writeFileSync(marker, "1"); process.exit(134); }
+    if (process.env.TTP_DEMO_MODELS) {
+      log(`${slot.id}: reading the question…`, true);
+      await new Promise((r) => setTimeout(r, 400));
+      log(`${slot.id}: started answering after 2.1 s`, true);
+      log(`${slot.id}: writing… 96 tokens, 5.8 tokens/s`, true);
+      log(`${slot.id}: finished in 31.4 s (182 tokens, 5.9 tokens/s)`, true);
+      // Screenshot demo: canned suggestions, found by the line they name.
+      const demo = JSON.parse(require("fs").readFileSync(process.env.TTP_DEMO_MODELS, "utf8"));
+      const out = (demo.matches[slot.id] || []).map((m) => {
+        const c = clips.find((x) => x.text === m.text);
+        return c ? { clip: c.id, direction: m.direction, intensity: m.intensity, fit: m.fit, reason: m.reason } : null;
+      }).filter(Boolean);
+      return { candidates: out };
+    }
     const pick = clips.find((c) => !(slot.exclude || []).includes(c.id));
     return { candidates: pick ? [{ clip: pick.id, direction: slot.direction, intensity: slot.intensity, fit: "stretch", reason: "Fake suggestion for testing." }] : [] };
   }
@@ -245,7 +268,7 @@ process.parentPort.on("message", async (e) => {
     if (msg.cmd === "probe") {
       const spec = ALL[msg.modelId];
       if (!spec) throw new Error(`Unknown model ${msg.modelId}.`);
-      const ready = FAKE ? false : isDownloaded(msg.dir, spec);
+      const ready = FAKE ? !!process.env.TTP_DEMO_MODELS : isDownloaded(msg.dir, spec);
       result = { downloaded: ready, sizeBytes: ready ? 0 : FAKE ? 2500 * 1024 * 1024 : await remoteSize(spec) };
     } else if (msg.cmd === "prepare") {
       result = await prepare(msg.modelId, msg.dir, msg.gpu !== false);
