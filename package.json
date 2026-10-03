@@ -1,0 +1,113 @@
+{
+  "name": "trainer-talk-packager",
+  "productName": "Trainer Talk Packager",
+  "version": "0.11.0",
+  "description": "Builds Trainer Talk voice packs from your own audio zips.",
+  "main": "main.js",
+  "license": "MIT",
+  "author": "ElvieBlooms",
+  "homepage": "https://github.com/ElvieBlooms/Trainer_Talk",
+  "scripts": {
+    "start": "electron .",
+    "test": "node --test test/*.test.js",
+    "schema": "node scripts/build-schema.js",
+    "dist:linux": "electron-builder --linux AppImage",
+    "dist:win": "electron-builder --win nsis",
+    "needed-zips": "node scripts/needed-zips.js",
+    "dist:mac": "electron-builder --mac dmg zip"
+  },
+  "build": {
+    "appId": "io.github.elvieblooms.trainertalkpackager",
+    "productName": "Trainer Talk Packager",
+    "files": [
+      "main.js",
+      "preload.js",
+      "src/**",
+      "schemas/**",
+      "recipes/**",
+      "LICENSE",
+      "THIRD_PARTY_NOTICES.md",
+      "package.json",
+      "!node_modules/onnxruntime-web/**",
+      "!node_modules/@huggingface/transformers/dist/*.web*",
+      "!node_modules/@huggingface/transformers/dist/transformers.js",
+      "!node_modules/@huggingface/transformers/dist/transformers.min.js",
+      "!node_modules/@huggingface/transformers/dist/*.wasm",
+      "!node_modules/@huggingface/transformers/dist/ort-*",
+      "!node_modules/@node-llama-cpp/*cuda*/**",
+      "!node_modules/@node-llama-cpp/linux-arm*/**",
+      "!node_modules/node-llama-cpp/llama/**/*.cpp",
+      "!node_modules/@node-llama-cpp/linux-riscv64/**",
+      "!node_modules/@node-llama-cpp/win-arm64/**"
+    ],
+    "linux": {
+      "target": "AppImage",
+      "category": "Utility",
+      "desktop": {
+        "entry": {
+          "StartupWMClass": "trainer-talk-packager"
+        }
+      },
+      "files": [
+        "!node_modules/onnxruntime-node/bin/napi-v*/darwin/**",
+        "!node_modules/onnxruntime-node/bin/napi-v*/win32/**"
+      ]
+    },
+    "win": {
+      "target": "nsis",
+      "files": [
+        "!node_modules/onnxruntime-node/bin/napi-v*/darwin/**",
+        "!node_modules/onnxruntime-node/bin/napi-v*/linux/**"
+      ]
+    },
+    "asarUnpack": [
+      "node_modules/onnxruntime-node/**",
+      "node_modules/sharp/**",
+      "node_modules/@img/**",
+      "node_modules/node-llama-cpp/**",
+      "node_modules/@node-llama-cpp/**"
+    ],
+    "artifactName": "Trainer_Talk_Packager-${version}-${os}-${arch}.${ext}",
+    "publish": [
+      {
+        "provider": "github",
+        "owner": "ElvieBlooms",
+        "repo": "Trainer_Talk_Packager",
+        "releaseType": "draft"
+      }
+    ],
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true
+    },
+    "mac": {
+      "target": [
+        "dmg",
+        "zip"
+      ],
+      "category": "public.app-category.utilities",
+      "identity": null,
+      "files": [
+        "!node_modules/onnxruntime-node/bin/napi-v*/linux/**",
+        "!node_modules/onnxruntime-node/bin/napi-v*/win32/**"
+      ]
+    },
+    "directories": {
+      "buildResources": "build"
+    }
+  },
+  "dependencies": {
+    "@huggingface/transformers": "^4.3.0",
+    "adm-zip": "^0.6.1",
+    "node-llama-cpp": "^3.22.1",
+    "wasm-media-encoders": "^0.7.0"
+  },
+  "devDependencies": {
+    "electron": "^44.5.1",
+    "electron-builder": "^26.15.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ElvieBlooms/Trainer_Talk_Packager.git"
+  }
+}

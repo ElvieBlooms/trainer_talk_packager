@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Security-Policy"
+        content="default-src 'self'; script-src 'self'; style-src 'self'; media-src blob:; img-src 'self' data:">
+  <title>Trainer Talk Packager</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <img class="brand-mark" src="assets/icon.png" alt="" width="24" height="24">
+      <span class="brand-name">Trainer Talk Packager</span>
+    </div>
+    <nav class="steps" aria-label="Steps">
+      <button class="step" data-view="setup">1 Set up</button>
+      <button class="step" data-view="review">2 Review</button>
+      <button class="step" data-view="export">3 Export</button>
+    </nav>
+    <button class="btn subtle small" id="activity-toggle" aria-expanded="false" aria-controls="activity">Activity</button>
+    <button class="linkish" id="repo-link" title="Open the Trainer Talk repository">Trainer Talk on GitHub</button>
+  </header>
+  <main id="view" tabindex="-1"></main>
+  <section id="activity" hidden aria-label="Activity">
+    <div class="activity-head">
+      <b>Activity</b>
+      <span class="muted small">What the app and its models are doing, live.</span>
+      <span class="spacer"></span>
+      <label class="check small"><input type="checkbox" id="activity-follow" checked> Follow</label>
+      <button class="btn subtle small" id="activity-copy">Copy</button>
+      <button class="btn subtle small" id="activity-clear">Clear</button>
+      <button class="btn subtle small" id="activity-logfile">Open log file</button>
+      <button class="btn subtle small" id="activity-close" aria-label="Close activity">Close</button>
+    </div>
+    <pre id="activity-lines" tabindex="0"></pre>
+  </section>
+  <div id="toast" role="status" aria-live="polite"></div>
+  <dialog id="modal"></dialog>
+  <script src="ui.js"></script>
+  <script src="features.js"></script>
+  <script src="app.js"></script>
+  <script src="activity.js"></script>
+</body>
+</html>
