@@ -1,0 +1,407 @@
+{
+  "recipe_format": 1,
+  "mod_id": "trainer_talk",
+  "schema_version": 1,
+  "pack_type": "trainer",
+  "label": "JESSIE",
+  "folder": "jessie",
+  "author": "unknown",
+  "created": "2026-10-03",
+  "sources": [
+    {
+      "id": "source1",
+      "label": "Jessie (English)",
+      "file_name": "Jessie (English).zip",
+      "zip_md5": "d1a719f87c3cd17d4d15e70eec62bbeb",
+      "clip_count": 80,
+      "picks": 48
+    }
+  ],
+  "slots": {
+    "new_game": {
+      "source": "source1",
+      "file": "ch0240_00_musashi_0000_en.ogg",
+      "crc32": "59a1e907",
+      "state": "confident",
+      "note": "Sounds like the JESSIE pack's file: 98% match on words and length. Compare them.",
+      "transcript": "I'm Jessie! Team Rocket blast off at the speed of light!"
+    },
+    "continue1": {
+      "source": "source1",
+      "file": "ch0240_00_musashi_0074_en.ogg",
+      "crc32": "c801ff38",
+      "state": "confident",
+      "note": "Sounds like the JESSIE pack's file: 100% match on words and length. Compare them.",
+      "transcript": "Team Rocket on the scene!"
+    },
+    "continue2": {
+      "source": "source1",
+      "file": "ch0240_00_musashi_0073_en.ogg",
+      "crc32": "b540e0ec",
+      "state": "confident",
+      "note": "Sounds like the JESSIE pack's file: 100% match on words and length. Compare them.",
+      "transcript": "to denounce the evils of truth and love."
+    },
+    "continue3": {
+      "source": "source1",
+      "file": "ch0240_00_musashi_0063_en.ogg",
+      "crc32": "897e4efa",
+      "state": "confident",
+      "note": "Sounds like the JESSIE pack's file: 100% match on words and length. Compare them.",
+      "transcript": "Leave everything to me!"
+    },
+    "continue4": {
+      "source": "source1",
+      "file": "ch0240_00_musashi_0006_en.ogg",
+      "crc32": "8be3c7bd",
+      "state": "confident",
+      "note": "Sounds like the JESSIE pack's file: 100% match on words and length. Compare them.",
+      "transcript": "There are no shortcuts to being evil! You've gotta work hard!"
+    },
+    "continue5": {
+      "source": "source1",
+      "file": "ch0240_00_musashi_0011_en.ogg",
+      "crc32": "d368eda6",
+      "state": "confident",
+      "note": "Sounds like the JESSIE pack's file: 100% match on words and length. Compare them.",
+      "transcript": "Me? Team up with you! Fine, but don't get used to this!"
+    },
+    "hit1": {
+      "source": "source1",
+      "file": "ch0240_00_musashi_0027_en.ogg",
+      "crc32": "f4ed2c22",
+      "state": "confident",
+      "note": "Sounds like the JESSIE pack's file: 99% match on words and length. Compare them.",
+      "transcript": "MY TURN!"
+    },
+    "hit2": {
+      "source": "source1",
+      "file": "ch0240_00_musashi_0014_en.ogg",
+      "crc32": "fbee7a5d",
+      "state": "confident",
+      "note": "Sounds like the JESSIE pack's file: 99% match on words and length. Compare them.",
+      "transcript": "Go for it!"
+    },
+    "hit3": {
+      "source": "source1",
+      "file": "ch0240_00_musashi_0015_en.ogg",
+      "crc32": "3738ed1a",
+      "state": "confident",
+      "note": "Sounds like the JESSIE pack's file: 99% match on words and length. Compare them.",
+      "transcript": "Get Em!"
+    },
+    "status_enemy": {
+      "source": "source1",
+      "file": "ch0240_00_musashi_0069_en.ogg",
+      "crc32": "ed9db99e",
+      "state": "confident",
+      "note": "Sounds like the JESSIE pack's file: 100% match on words and length. Compare them.",
+      "transcript": "Hahahaha!"
+    },
+    "status_enemy2": {
+      "source": "source1",
+      "file": "ch0240_00_musashi_0038_en.ogg",
+      "crc32": "5a035736",
+      "state": "confident",
+      "note": "Sounds like the JESSIE pack's file: 99% match on words and length. Compare them.",
+      "transcript": "OOOOHHHH"
+    },
+    "status_player": {
+      "source": "source1",
+      "file": "ch0240_00_musashi_0025_en.ogg",
+      "crc32": "90c37604",
+      "state": "confident",
+      "note": "Sounds like the JESSIE pack's file: 88% match on words and length. Compare them.",
+      "transcript": "TROUBLE!"
+    },
+    "status_player2": {
+      "source": "source1",
+      "file": "ch0240_00_musashi_0052_en.ogg",
+      "crc32": "62b0fa5b",
+      "state": "confident",
+      "note": "Sounds like the JESSIE pack's file: 99% match on words and length. Compare them.",
+      "transcript": "Oh no!"
+    },
+    "hit_crit": {
+      "source": "source1",
+      "file": "ch0240_00_musashi_0068_en.ogg",
+      "crc32": "5454a055",
+      "state": "confident",
+      "note": "Sounds like the JESSIE pack's file: 100% match on words and length. Compare them.",
+      "transcript": "AMAZING!"
+    },
+    "hit_crit2": {
+      "source": "source1",
+      "file": "ch0240_00_musashi_0043_en.ogg",
+      "crc32": "b398118b",
+      "state": "confident",
+      "note": "Sounds like the JESSIE pack's file: 100% match on words and length. Compare them.",
+      "transcript": "Not too shabby."
+    },
+    "move_miss": {
+      "source": "source1",
+      "file": "ch0240_00_musashi_0047_en.ogg",
+      "crc32": "7d973e35",
+      "state": "confident",
+      "note": "Sounds like the JESSIE pack's file: 100% match on words and length. Compare them.",
+      "transcript": "What's the big idea?"
+    },
+    "move_miss2": {
+      "source": "source1",
+      "file": "ch0240_00_musashi_0041_en.ogg",
+      "crc32": "e1080e11",
+      "state": "confident",
+      "note": "Sounds like the JESSIE pack's file: 99% match on words and length. Compare them.",
+      "transcript": "HMM!"
+    },
+    "catch_fail": {
+      "source": "source1",
+      "file": "ch0240_00_musashi_0064_en.ogg",
+      "crc32": "1fd58877",
+      "state": "confident",
+      "note": "Closest to the pack's file by sound: sounds alike: 97% (shape 98%, pitch 95%, length 1.77 s vs 1.79 s). Compare them.",
+      "transcript": "No!"
+    },
+    "catch_fail2": {
+      "source": "source1",
+      "file": "ch0240_00_musashi_0037_en.ogg",
+      "crc32": "fcd0a240",
+      "state": "confident",
+      "note": "Sounds like the JESSIE pack's file: 100% match on words and length. Compare them.",
+      "transcript": "What?"
+    },
+    "run_success": {
+      "source": "source1",
+      "file": "ch0240_00_musashi_0070_en.ogg",
+      "crc32": "c215950e",
+      "state": "confident",
+      "note": "Sounds like the JESSIE pack's file: 99% match on words and length. Compare them.",
+      "transcript": "Later!"
+    },
+    "run_success2": {
+      "source": "source1",
+      "file": "ch0240_00_musashi_0026_en.ogg",
+      "crc32": "66e6fb40",
+      "state": "confident",
+      "note": "Sounds like the JESSIE pack's file: 99% match on words and length. Compare them.",
+      "transcript": "Blast off!"
+    },
+    "run_fail": {
+      "source": "source1",
+      "file": "ch0240_00_musashi_0017_en.ogg",
+      "crc32": "d9530290",
+      "state": "confident",
+      "note": "Closest to the pack's file by sound: sounds alike: 97% (shape 98%, pitch 95%, length 1.77 s vs 1.79 s). Compare them.",
+      "transcript": "Not done yet!"
+    },
+    "run_fail2": {
+      "source": "source1",
+      "file": "ch0240_00_musashi_0058_en.ogg",
+      "crc32": "d18f5965",
+      "state": "confident",
+      "note": "Closest to the pack's file by sound: sounds alike: 98% (shape 99%, pitch 97%, length 1.47 s vs 1.5 s). Compare them.",
+      "transcript": "*Dissapointed Groan*"
+    },
+    "faint_enemy": {
+      "source": "source1",
+      "file": "ch0240_00_musashi_0066_en.ogg",
+      "crc32": "d61dd304",
+      "state": "confident",
+      "note": "Sounds like the JESSIE pack's file: 100% match on words and length. Compare them.",
+      "transcript": "Oh, I'm sure you won't mind!"
+    },
+    "faint_enemy2": {
+      "source": "source1",
+      "file": "ch0240_00_musashi_0012_en.ogg",
+      "crc32": "2254d697",
+      "state": "confident",
+      "note": "Closest to the pack's file by sound: sounds alike: 96% (shape 96%, pitch 94%, length 1.81 s vs 1.83 s). Compare them.",
+      "transcript": "It's about time! This sure does feel good!"
+    },
+    "faint_player": {
+      "source": "source1",
+      "file": "ch0240_00_musashi_0055_en.ogg",
+      "crc32": "da1e6932",
+      "state": "confident",
+      "note": "Sounds like the JESSIE pack's file: 89% match on words and length. Compare them.",
+      "transcript": "AHHH!"
+    },
+    "faint_player2": {
+      "source": "source1",
+      "file": "ch0240_00_musashi_0024_en.ogg",
+      "crc32": "a15628ec",
+      "state": "confident",
+      "note": "Sounds like the JESSIE pack's file: 99% match on words and length. Compare them.",
+      "transcript": "TWERPS!"
+    },
+    "evolved": {
+      "source": "source1",
+      "file": "ch0240_00_musashi_0008_en.ogg",
+      "crc32": "4c36591b",
+      "state": "confident",
+      "note": "Sounds like the JESSIE pack's file: 100% match on words and length. Compare them.",
+      "transcript": "Ooooh, we gotta try this out right now!"
+    },
+    "new_catch": {
+      "source": "source1",
+      "file": "ch0240_00_musashi_0009_en.ogg",
+      "crc32": "82b83f14",
+      "state": "confident",
+      "note": "Sounds like the JESSIE pack's file: 100% match on words and length. Compare them.",
+      "transcript": "Oh my gosh! You're too perfect!"
+    },
+    "new_catch2": {
+      "source": "source1",
+      "file": "ch0240_00_musashi_0044_en.ogg",
+      "crc32": "dec2fdc0",
+      "state": "confident",
+      "note": "Sounds like the JESSIE pack's file: 100% match on words and length. Compare them.",
+      "transcript": "Ooooh, how nice!"
+    },
+    "blackout": {
+      "source": "source1",
+      "file": "ch0240_00_musashi_0022_en.ogg",
+      "crc32": "8c5b1c78",
+      "state": "confident",
+      "note": "Sounds like the JESSIE pack's file: 100% match on words and length. Compare them.",
+      "transcript": "Looks like Team Rocket's blasting off again!"
+    },
+    "blackout2": {
+      "source": "source1",
+      "file": "ch0240_00_musashi_0028_en.ogg",
+      "crc32": "86d9570f",
+      "state": "confident",
+      "note": "Sounds like the JESSIE pack's file: 100% match on words and length. Compare them.",
+      "transcript": "No way! How could this happen?"
+    },
+    "battle_win": {
+      "source": "source1",
+      "file": "ch0240_00_musashi_0021_en.ogg",
+      "crc32": "bc58b559",
+      "state": "confident",
+      "note": "Sounds like the JESSIE pack's file: 100% match on words and length. Compare them.",
+      "transcript": "We'll be up for a promotion in no time!"
+    },
+    "battle_win2": {
+      "source": "source1",
+      "file": "ch0240_00_musashi_0039_en.ogg",
+      "crc32": "7d3421d3",
+      "state": "confident",
+      "note": "Sounds like the JESSIE pack's file: 100% match on words and length. Compare them.",
+      "transcript": "*Delighted Giggle*"
+    },
+    "battle_loss": {
+      "source": "source1",
+      "file": "ch0240_00_musashi_0051_en.ogg",
+      "crc32": "cff42849",
+      "state": "confident",
+      "note": "Sounds like the JESSIE pack's file: 100% match on words and length. Compare them.",
+      "transcript": "AHHH!"
+    },
+    "battle_loss2": {
+      "source": "source1",
+      "file": "ch0240_00_musashi_0019_en.ogg",
+      "crc32": "6b4a7628",
+      "state": "confident",
+      "note": "Sounds like the JESSIE pack's file: 100% match on words and length. Compare them.",
+      "transcript": "Not good, not good!"
+    },
+    "gym_enter": {
+      "source": "source1",
+      "file": "ch0240_00_musashi_0072_en.ogg",
+      "crc32": "36266eab",
+      "state": "confident",
+      "note": "Closest to the pack's file by sound: sounds alike: 97% (shape 98%, pitch 96%, length 2.03 s vs 2.06 s). Compare them.",
+      "transcript": "Put the plan into action!"
+    },
+    "gym_enter2": {
+      "source": "source1",
+      "file": "ch0240_00_musashi_0013_en.ogg",
+      "crc32": "60a92913",
+      "state": "confident",
+      "note": "Closest to the pack's file by sound: sounds alike: 98% (shape 98%, pitch 97%, length 1.82 s vs 1.84 s). Compare them.",
+      "transcript": "You'd better be ready for this!"
+    },
+    "gym_enter3": {
+      "source": "source1",
+      "file": "ch0240_00_musashi_0020_en.ogg",
+      "crc32": "09f97090",
+      "state": "confident",
+      "note": "Sounds like the JESSIE pack's file: 100% match on words and length. Compare them.",
+      "transcript": "Prepare for trouble!"
+    },
+    "e4_enter": {
+      "source": "source1",
+      "file": "ch0240_00_musashi_1002_en.ogg",
+      "crc32": "a328a3fd",
+      "state": "confident",
+      "note": "Sounds like the JESSIE pack's file: 100% match on words and length. Compare them.",
+      "transcript": "to protect the world from devastation!"
+    },
+    "e4_enter2": {
+      "source": "source1",
+      "file": "ch0240_00_musashi_1003_en.ogg",
+      "crc32": "bbbf4ee9",
+      "state": "confident",
+      "note": "Sounds like the JESSIE pack's file: 100% match on words and length. Compare them.",
+      "transcript": "to denounce the evils of truth and love."
+    },
+    "champion_enter": {
+      "source": "source1",
+      "file": "ch0240_00_musashi_0010_en.ogg",
+      "crc32": "4f428b7b",
+      "state": "confident",
+      "note": "Sounds like the JESSIE pack's file: 100% match on words and length. Compare them.",
+      "transcript": "Prepare for trouble! Oh, it's you again? Well that was a waste of effort!"
+    },
+    "champion_enter2": {
+      "source": "source1",
+      "file": "ch0240_00_musashi_1005_en.ogg",
+      "crc32": "9edc6d95",
+      "state": "confident",
+      "note": "Sounds like the JESSIE pack's file: 100% match on words and length. Compare them.",
+      "transcript": "Team Rocket blasts off at the speed of light!"
+    },
+    "night1": {
+      "source": "source1",
+      "file": "ch0240_00_musashi_0031_en.ogg",
+      "crc32": "5ad01d5a",
+      "state": "confident",
+      "note": "Sounds like the JESSIE pack's file: 100% match on words and length. Compare them.",
+      "transcript": "Oh, look who's still awake! Hmm? You wanna know what I'm doing with a shovel at night? Well, when else are we supposed to dig our traps?"
+    },
+    "night2": {
+      "source": "source1",
+      "file": "ch0240_00_musashi_0033_en.ogg",
+      "crc32": "3cd3fdeb",
+      "state": "confident",
+      "note": "Sounds like the JESSIE pack's file: 99% match on words and length. Compare them.",
+      "transcript": "Team Rocket Huddle! We have to plan the sinister scheme we'll put into action once night falls!"
+    },
+    "night3": {
+      "source": "source1",
+      "file": "ch0240_00_musashi_0034_en.ogg",
+      "crc32": "e7c2f23b",
+      "state": "confident",
+      "note": "Closest to the pack's file by sound: sounds alike: 98% (shape 98%, pitch 96%, length 5.32 s vs 5.37 s). Compare them.",
+      "transcript": "Evil shines in the dark of night! And we won't let any twerps get in our way!"
+    },
+    "morning1": {
+      "source": "source1",
+      "file": "ch0240_00_musashi_0032_en.ogg",
+      "crc32": "9e025d05",
+      "state": "confident",
+      "note": "Sounds like the JESSIE pack's file: 100% match on words and length. Compare them.",
+      "transcript": "I'm up early! Well, of course! A child like you wouldn't understand how much time and energy a beauty like me needs to look her best!"
+    },
+    "morning2": {
+      "source": "source1",
+      "file": "ch0240_00_musashi_0029_en.ogg",
+      "crc32": "70bf7bd6",
+      "state": "confident",
+      "note": "Sounds like the JESSIE pack's file: 100% match on words and length. Compare them.",
+      "transcript": "Well, you're chipper this morning. How am I supposed to commit dastardly deeds when you're so full of energy?"
+    }
+  },
+  "confirmed_empty": []
+}

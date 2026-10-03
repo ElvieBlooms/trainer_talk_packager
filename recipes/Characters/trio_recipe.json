@@ -1,0 +1,423 @@
+{
+  "recipe_format": 1,
+  "mod_id": "trainer_talk",
+  "schema_version": 1,
+  "pack_type": "trainer",
+  "label": "ROCKET TRIO",
+  "folder": "trio",
+  "author": "unknown",
+  "created": "2026-10-03",
+  "sources": [
+    {
+      "id": "source1",
+      "label": "James (English)",
+      "file_name": "James (English).zip",
+      "zip_md5": "40130272515be68403bba7866565070b",
+      "clip_count": 80,
+      "picks": 15
+    },
+    {
+      "id": "source2",
+      "label": "Jessie (English)",
+      "file_name": "Jessie (English).zip",
+      "zip_md5": "d1a719f87c3cd17d4d15e70eec62bbeb",
+      "clip_count": 80,
+      "picks": 19
+    },
+    {
+      "id": "source3",
+      "label": "Meowth (English)",
+      "file_name": "Meowth (English).zip",
+      "zip_md5": "8ef62ed8947e1b411c7f42d210520aa7",
+      "clip_count": 89,
+      "picks": 14
+    }
+  ],
+  "slots": {
+    "new_game": {
+      "source": "source2",
+      "file": "ch0240_00_musashi_0074_en.ogg",
+      "crc32": "c801ff38",
+      "state": "confident",
+      "note": "Same audio as the ROCKET TRIO pack's file.",
+      "transcript": "Team Rocket on the scene!"
+    },
+    "continue1": {
+      "source": "source1",
+      "file": "ch0241_00_kojiro_0010_en.ogg",
+      "crc32": "405e2524",
+      "state": "confident",
+      "note": "Same audio as the ROCKET TRIO pack's file.",
+      "transcript": "I'm baaaack! I'm here to unite all peoples! Well, you know the drill."
+    },
+    "continue2": {
+      "source": "source3",
+      "file": "ch0258_00_meowth_0013_en.ogg",
+      "crc32": "9e19c330",
+      "state": "confident",
+      "note": "Same audio as the ROCKET TRIO pack's file.",
+      "transcript": "Here we go!"
+    },
+    "continue3": {
+      "source": "source2",
+      "file": "ch0240_00_musashi_0023_en.ogg",
+      "crc32": "4a54a247",
+      "state": "confident",
+      "note": "Same audio as the ROCKET TRIO pack's file.",
+      "transcript": "Let's go!"
+    },
+    "continue4": {
+      "source": "source1",
+      "file": "ch0241_00_kojiro_0071_en.ogg",
+      "crc32": "d17fc76e",
+      "state": "confident",
+      "note": "Same audio as the ROCKET TRIO pack's file.",
+      "transcript": "Here we come!"
+    },
+    "continue5": {
+      "source": "source2",
+      "file": "ch0240_00_musashi_1005_en.ogg",
+      "crc32": "9edc6d95",
+      "state": "confident",
+      "note": "Same audio as the ROCKET TRIO pack's file.",
+      "transcript": "Team Rocket blasts off at the speed of light!"
+    },
+    "hit1": {
+      "source": "source1",
+      "file": "ch0241_00_kojiro_0014_en.ogg",
+      "crc32": "9e86fe1d",
+      "state": "confident",
+      "note": "Same audio as the ROCKET TRIO pack's file.",
+      "transcript": "Get them!"
+    },
+    "hit2": {
+      "source": "source2",
+      "file": "ch0240_00_musashi_0013_en.ogg",
+      "crc32": "60a92913",
+      "state": "confident",
+      "note": "Same audio as the ROCKET TRIO pack's file.",
+      "transcript": "You'd better be ready for this!"
+    },
+    "hit3": {
+      "source": "source2",
+      "file": "ch0240_00_musashi_0014_en.ogg",
+      "crc32": "fbee7a5d",
+      "state": "confident",
+      "note": "Same audio as the ROCKET TRIO pack's file.",
+      "transcript": "Go for it!"
+    },
+    "status_enemy": {
+      "source": "source2",
+      "file": "ch0240_00_musashi_0039_en.ogg",
+      "crc32": "7d3421d3",
+      "state": "confident",
+      "note": "Same audio as the ROCKET TRIO pack's file.",
+      "transcript": "AHHH!"
+    },
+    "status_enemy2": {
+      "source": "source2",
+      "file": "ch0240_00_musashi_0039_uni_en.ogg",
+      "crc32": "b7f646c4",
+      "state": "confident",
+      "note": "Same audio as the ROCKET TRIO pack's file.",
+      "transcript": "Hahahahahahahahahaha!"
+    },
+    "status_player": {
+      "source": "source2",
+      "file": "ch0240_00_musashi_0048_en.ogg",
+      "crc32": "72286ff6",
+      "state": "confident",
+      "note": "Same audio as the ROCKET TRIO pack's file.",
+      "transcript": "That does it!"
+    },
+    "status_player2": {
+      "source": "source1",
+      "file": "ch0241_00_kojiro_0052_en.ogg",
+      "crc32": "4a55e7e4",
+      "state": "confident",
+      "note": "Same audio as the ROCKET TRIO pack's file.",
+      "transcript": "Dreadful!"
+    },
+    "hit_crit": {
+      "source": "source1",
+      "file": "ch0241_00_kojiro_0068_en.ogg",
+      "crc32": "7732dd81",
+      "state": "confident",
+      "note": "Same audio as the ROCKET TRIO pack's file.",
+      "transcript": "Fantastic!"
+    },
+    "hit_crit2": {
+      "source": "source3",
+      "file": "ch0258_00_meowth_0074_en.ogg",
+      "crc32": "fb02efbe",
+      "state": "confident",
+      "note": "Same audio as the ROCKET TRIO pack's file.",
+      "transcript": "Feel my fury! Take this!"
+    },
+    "move_miss": {
+      "source": "source1",
+      "file": "ch0241_00_kojiro_0048_en.ogg",
+      "crc32": "acb7f452",
+      "state": "confident",
+      "note": "Same audio as the ROCKET TRIO pack's file.",
+      "transcript": "The nerve!"
+    },
+    "move_miss2": {
+      "source": "source2",
+      "file": "ch0240_00_musashi_0047_en.ogg",
+      "crc32": "7d973e35",
+      "state": "confident",
+      "note": "Same audio as the ROCKET TRIO pack's file.",
+      "transcript": "What's the big idea?"
+    },
+    "catch_fail": {
+      "source": "source3",
+      "file": "ch0258_00_meowth_0058_en.ogg",
+      "crc32": "ea8fc25b",
+      "state": "confident",
+      "note": "Same audio as the ROCKET TRIO pack's file.",
+      "transcript": "Oy Vey!"
+    },
+    "catch_fail2": {
+      "source": "source1",
+      "file": "ch0241_00_kojiro_0058_en.ogg",
+      "crc32": "c48cceeb",
+      "state": "confident",
+      "note": "Same audio as the ROCKET TRIO pack's file.",
+      "transcript": "Drat!"
+    },
+    "run_success": {
+      "source": "source1",
+      "file": "ch0241_00_kojiro_0011_en.ogg",
+      "crc32": "3a62493d",
+      "state": "confident",
+      "note": "Same audio as the ROCKET TRIO pack's file.",
+      "transcript": "WAIT FOR ME! Don't leave me behind!"
+    },
+    "run_success2": {
+      "source": "source3",
+      "file": "ch0258_00_meowth_0070_en.ogg",
+      "crc32": "c07d8dba",
+      "state": "confident",
+      "note": "Same audio as the ROCKET TRIO pack's file.",
+      "transcript": "LATER!"
+    },
+    "run_fail": {
+      "source": "source3",
+      "file": "ch0258_00_meowth_0048_en.ogg",
+      "crc32": "40d02712",
+      "state": "confident",
+      "note": "Same audio as the ROCKET TRIO pack's file.",
+      "transcript": "Now I'm mad!"
+    },
+    "run_fail2": {
+      "source": "source2",
+      "file": "ch0240_00_musashi_0041_en.ogg",
+      "crc32": "e1080e11",
+      "state": "confident",
+      "note": "Same audio as the ROCKET TRIO pack's file.",
+      "transcript": "HUH!"
+    },
+    "faint_enemy": {
+      "source": "source2",
+      "file": "ch0240_00_musashi_0012_en.ogg",
+      "crc32": "2254d697",
+      "state": "confident",
+      "note": "Same audio as the ROCKET TRIO pack's file.",
+      "transcript": "It's about time! This sure does feel good!"
+    },
+    "faint_enemy2": {
+      "source": "source3",
+      "file": "ch0258_00_meowth_0044_en.ogg",
+      "crc32": "29de1018",
+      "state": "confident",
+      "note": "Same audio as the ROCKET TRIO pack's file.",
+      "transcript": "Couldn't have done it better myself!"
+    },
+    "faint_player": {
+      "source": "source1",
+      "file": "ch0241_00_kojiro_0051_en.ogg",
+      "crc32": "a07bd133",
+      "state": "confident",
+      "note": "Same audio as the ROCKET TRIO pack's file.",
+      "transcript": "Mwahaha!"
+    },
+    "faint_player2": {
+      "source": "source2",
+      "file": "ch0240_00_musashi_0052_en.ogg",
+      "crc32": "62b0fa5b",
+      "state": "confident",
+      "note": "Same audio as the ROCKET TRIO pack's file.",
+      "transcript": "Oh no!"
+    },
+    "evolved": {
+      "source": "source3",
+      "file": "ch0258_00_meowth_0007_en.ogg",
+      "crc32": "9d9ab80a",
+      "state": "confident",
+      "note": "Same audio as the ROCKET TRIO pack's file.",
+      "transcript": "You think I've reached my peak? You ain't seen nothin' yet!"
+    },
+    "new_catch": {
+      "source": "source2",
+      "file": "ch0240_00_musashi_0044_en.ogg",
+      "crc32": "dec2fdc0",
+      "state": "confident",
+      "note": "Same audio as the ROCKET TRIO pack's file.",
+      "transcript": "Ooooh, how nice!"
+    },
+    "new_catch2": {
+      "source": "source3",
+      "file": "ch0258_00_meowth_0068_en.ogg",
+      "crc32": "eaaa40fc",
+      "state": "confident",
+      "note": "Same audio as the ROCKET TRIO pack's file.",
+      "transcript": "Wow!"
+    },
+    "blackout": {
+      "source": "source3",
+      "file": "ch0258_00_meowth_0022_uni_en.ogg",
+      "crc32": "a9de68b2",
+      "state": "confident",
+      "note": "Same audio as the ROCKET TRIO pack's file.",
+      "transcript": "Looks like Team Rocket's blasting off again!"
+    },
+    "blackout2": {
+      "source": "source2",
+      "file": "ch0240_00_musashi_0022_en.ogg",
+      "crc32": "8c5b1c78",
+      "state": "confident",
+      "note": "Same audio as the ROCKET TRIO pack's file.",
+      "transcript": "Looks like Team Rocket's blasting off again!"
+    },
+    "battle_win": {
+      "source": "source1",
+      "file": "ch0241_00_kojiro_0021_en.ogg",
+      "crc32": "27347533",
+      "state": "confident",
+      "note": "Same audio as the ROCKET TRIO pack's file.",
+      "transcript": "WE'LL BE UP FOR A PROMOTION IN NO TIME!"
+    },
+    "battle_win2": {
+      "source": "source3",
+      "file": "ch0258_00_meowth_0012_en.ogg",
+      "crc32": "dd3c0217",
+      "state": "confident",
+      "note": "Same audio as the ROCKET TRIO pack's file.",
+      "transcript": "There's no limit to how bad you can be!"
+    },
+    "battle_loss": {
+      "source": "source1",
+      "file": "ch0241_00_kojiro_0028_en.ogg",
+      "crc32": "4e8014ae",
+      "state": "confident",
+      "note": "Same audio as the ROCKET TRIO pack's file.",
+      "transcript": "I was so sure we'd win!"
+    },
+    "battle_loss2": {
+      "source": "source2",
+      "file": "ch0240_00_musashi_0028_en.ogg",
+      "crc32": "86d9570f",
+      "state": "confident",
+      "note": "Same audio as the ROCKET TRIO pack's file.",
+      "transcript": "No way! How could this happen?"
+    },
+    "gym_enter": {
+      "source": "source1",
+      "file": "ch0241_00_kojiro_0074_uni_en.ogg",
+      "crc32": "22b8f0ca",
+      "state": "confident",
+      "note": "Same audio as the ROCKET TRIO pack's file.",
+      "transcript": "Team Rocket on the scene!"
+    },
+    "gym_enter2": {
+      "source": "source1",
+      "file": "ch0241_00_kojiro_0072_en.ogg",
+      "crc32": "b9b67cbb",
+      "state": "confident",
+      "note": "Same audio as the ROCKET TRIO pack's file.",
+      "transcript": "Put the plan into action!"
+    },
+    "gym_enter3": {
+      "source": "source2",
+      "file": "ch0240_00_musashi_0034_en.ogg",
+      "crc32": "e7c2f23b",
+      "state": "confident",
+      "note": "Same audio as the ROCKET TRIO pack's file.",
+      "transcript": "Evil shines in the dark of night! And we won't let any twerps get in our way!"
+    },
+    "e4_enter": {
+      "source": "source3",
+      "file": "ch0258_00_meowth_1011_en.ogg",
+      "crc32": "2aef18e6",
+      "state": "confident",
+      "note": "Same audio as the ROCKET TRIO pack's file.",
+      "transcript": "You better watch out if you're having a good day. Cause Team Rocket will be there to wreck it!"
+    },
+    "e4_enter2": {
+      "source": "source2",
+      "file": "ch0240_00_musashi_1002_en.ogg",
+      "crc32": "a328a3fd",
+      "state": "confident",
+      "note": "Same audio as the ROCKET TRIO pack's file.",
+      "transcript": "to protect the world from devastation!"
+    },
+    "champion_enter": {
+      "source": "source1",
+      "file": "ch0241_00_kojiro_1005_en.ogg",
+      "crc32": "4dd9e7a1",
+      "state": "confident",
+      "note": "Same audio as the ROCKET TRIO pack's file.",
+      "transcript": "Surrender now or prepare to fight!"
+    },
+    "champion_enter2": {
+      "source": "source3",
+      "file": "ch0258_00_meowth_1005_en.ogg",
+      "crc32": "4d674aec",
+      "state": "confident",
+      "note": "Same audio as the ROCKET TRIO pack's file.",
+      "transcript": "Meowth! That's right! Meticulous planning is how professional evil doers like us get the job done!"
+    },
+    "night1": {
+      "source": "source3",
+      "file": "ch0258_00_meowth_0031_en.ogg",
+      "crc32": "b08eeb28",
+      "state": "confident",
+      "note": "Same audio as the ROCKET TRIO pack's file.",
+      "transcript": "Heading out somewhere? You better be careful at night! That's when us bad guys go out to cause trouble!"
+    },
+    "night2": {
+      "source": "source1",
+      "file": "ch0241_00_kojiro_0034_en.ogg",
+      "crc32": "705db511",
+      "state": "confident",
+      "note": "Same audio as the ROCKET TRIO pack's file.",
+      "transcript": "Twerps like you should be in bed by now. What are you doing up? You're not. Up to no good, are you?"
+    },
+    "night3": {
+      "source": "source2",
+      "file": "ch0240_00_musashi_0031_en.ogg",
+      "crc32": "5ad01d5a",
+      "state": "confident",
+      "note": "Same audio as the ROCKET TRIO pack's file.",
+      "transcript": "Oh, look who's still awake! Hmm? You wanna know what I'm doing with a shovel at night? Well, when else are we supposed to dig our traps?"
+    },
+    "morning1": {
+      "source": "source3",
+      "file": "ch0258_00_meowth_0029_en.ogg",
+      "crc32": "c78cbb94",
+      "state": "confident",
+      "note": "Same audio as the ROCKET TRIO pack's file.",
+      "transcript": "Morning, you looking ready to go. Let me just polish my charm and we'll go make some mischief"
+    },
+    "morning2": {
+      "source": "source2",
+      "file": "ch0240_00_musashi_0029_en.ogg",
+      "crc32": "70bf7bd6",
+      "state": "confident",
+      "note": "Same audio as the ROCKET TRIO pack's file.",
+      "transcript": "Well, you're chipper this morning. How am I supposed to commit dastardly deeds when you're so full of energy?"
+    }
+  },
+  "confirmed_empty": []
+}

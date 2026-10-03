@@ -1,0 +1,352 @@
+{
+  "recipe_format": 1,
+  "mod_id": "trainer_talk",
+  "schema_version": 1,
+  "pack_type": "trainer",
+  "label": "ASH",
+  "folder": "ash",
+  "author": "unknown",
+  "created": "2026-10-03",
+  "sources": [
+    {
+      "id": "source1",
+      "label": "Ash (English)",
+      "file_name": "Ash (English).zip",
+      "zip_md5": "57158cba19203d698cd4cf4dce4ea0b0",
+      "clip_count": 71,
+      "picks": 45
+    }
+  ],
+  "slots": {
+    "new_game": {
+      "source": "source1",
+      "file": "ch0264_00_satoshi_0000_en.ogg",
+      "crc32": "be8acc03",
+      "state": "confident",
+      "transcript": "I'm Ash from Pallet Town, and this is my buddy, Pikachu. My dream is to become a Pokémon Master!"
+    },
+    "continue1": {
+      "source": "source1",
+      "file": "ch0264_00_satoshi_0002_en.ogg",
+      "crc32": "61162bfd",
+      "state": "confident",
+      "transcript": "Hahaha, you're gonna like this!"
+    },
+    "continue2": {
+      "source": "source1",
+      "file": "ch0264_00_satoshi_0036_en.ogg",
+      "crc32": "c44e2fbd",
+      "state": "confident",
+      "note": "Medium-confidence transcript: listen before treating as final.",
+      "transcript": "Hey!"
+    },
+    "continue3": {
+      "source": "source1",
+      "file": "ch0264_00_satoshi_0016_en.ogg",
+      "crc32": "26b37665",
+      "state": "confident",
+      "transcript": "Let's do this!"
+    },
+    "continue4": {
+      "source": "source1",
+      "file": "ch0264_00_satoshi_0060_en.ogg",
+      "crc32": "80c2a4b1",
+      "state": "confident",
+      "transcript": "Okay!"
+    },
+    "continue5": {
+      "source": "source1",
+      "file": "ch0264_00_satoshi_0011_en.ogg",
+      "crc32": "278f3976",
+      "state": "confident",
+      "transcript": "Okay, I'll go with you!"
+    },
+    "hit1": {
+      "source": "source1",
+      "file": "ch0264_00_satoshi_0023_en.ogg",
+      "crc32": "a35fbf45",
+      "state": "confident",
+      "transcript": "Let's go!"
+    },
+    "hit2": {
+      "source": "source1",
+      "file": "ch0264_00_satoshi_0073_en.ogg",
+      "crc32": "9908e335",
+      "state": "confident",
+      "transcript": "Pikachu! Use Thunderbolt!"
+    },
+    "hit3": {
+      "source": "source1",
+      "file": "ch0264_00_satoshi_0015_en.ogg",
+      "crc32": "6dad8cc1",
+      "state": "confident",
+      "transcript": "Keep it up!"
+    },
+    "status_enemy": {
+      "source": "source1",
+      "file": "ch0264_00_satoshi_0018_en.ogg",
+      "crc32": "1aa09c31",
+      "state": "confident",
+      "transcript": "Awesome!"
+    },
+    "status_enemy2": {
+      "source": "source1",
+      "file": "ch0264_00_satoshi_0039_en.ogg",
+      "crc32": "3e8014f4",
+      "state": "confident",
+      "note": "Medium-confidence transcript: listen before treating as final.",
+      "transcript": "[laughs exuberantly]"
+    },
+    "status_player": {
+      "source": "source1",
+      "file": "ch0264_00_satoshi_0048_en.ogg",
+      "crc32": "5d065a00",
+      "state": "confident",
+      "transcript": "Quit it!"
+    },
+    "status_player2": {
+      "source": "source1",
+      "file": "ch0264_00_satoshi_0056_en.ogg",
+      "crc32": "e2433afd",
+      "state": "confident",
+      "transcript": "AHHH!"
+    },
+    "hit_crit": {
+      "source": "source1",
+      "file": "ch0264_00_satoshi_0043_en.ogg",
+      "crc32": "8d9dd028",
+      "state": "confident",
+      "transcript": "Awesome!"
+    },
+    "hit_crit2": {
+      "source": "source1",
+      "file": "ch0264_00_satoshi_0068_en.ogg",
+      "crc32": "c3fbf95f",
+      "state": "confident",
+      "transcript": "Wow!"
+    },
+    "move_miss": {
+      "source": "source1",
+      "file": "ch0264_00_satoshi_0041_en.ogg",
+      "crc32": "99bab8fd",
+      "state": "confident",
+      "note": "Medium-confidence transcript: listen before treating as final.",
+      "transcript": "[dismissive 'tch']"
+    },
+    "move_miss2": {
+      "source": "source1",
+      "file": "ch0264_00_satoshi_0028_en.ogg",
+      "crc32": "b21a8334",
+      "state": "confident",
+      "transcript": "No way..."
+    },
+    "catch_fail": {
+      "source": "source1",
+      "file": "ch0264_00_satoshi_0062_en.ogg",
+      "crc32": "54eba6b0",
+      "state": "confident",
+      "transcript": "Sorry."
+    },
+    "catch_fail2": {
+      "source": "source1",
+      "file": "ch0264_00_satoshi_0042_en.ogg",
+      "crc32": "95fb8b0f",
+      "state": "confident",
+      "note": "Medium-confidence transcript: listen before treating as final.",
+      "transcript": "[awkward chuckle]"
+    },
+    "run_success": {
+      "source": "source1",
+      "file": "ch0264_00_satoshi_0070_en.ogg",
+      "crc32": "5ba8b2aa",
+      "state": "confident",
+      "transcript": "See ya later!"
+    },
+    "run_success2": {
+      "source": "source1",
+      "file": "ch0264_00_satoshi_0014_en.ogg",
+      "crc32": "875bba0b",
+      "state": "confident",
+      "transcript": "GO!"
+    },
+    "run_fail": {
+      "source": "source1",
+      "file": "ch0264_00_satoshi_0054_en.ogg",
+      "crc32": "858a23b8",
+      "state": "confident",
+      "transcript": "NAAAAA"
+    },
+    "run_fail2": {
+      "source": "source1",
+      "file": "ch0264_00_satoshi_0057_en.ogg",
+      "crc32": "6da7bf4a",
+      "state": "confident",
+      "transcript": "Aaaah!"
+    },
+    "faint_enemy": {
+      "source": "source1",
+      "file": "ch0264_00_satoshi_0044_en.ogg",
+      "crc32": "87d25f2b",
+      "state": "confident",
+      "note": "Impressed rather than triumphant: Ash has no gloating lines.",
+      "transcript": "Whoa!"
+    },
+    "faint_enemy2": {
+      "source": "source1",
+      "file": "ch0264_00_satoshi_0063_en.ogg",
+      "crc32": "41c2e426",
+      "state": "confident",
+      "note": "Impressed rather than triumphant: Ash has no gloating lines.",
+      "transcript": "You can count on me!"
+    },
+    "faint_player": {
+      "source": "source1",
+      "file": "ch0264_00_satoshi_0052_en.ogg",
+      "crc32": "788b8e15",
+      "state": "confident",
+      "transcript": "Oh, no!"
+    },
+    "faint_player2": {
+      "source": "source1",
+      "file": "ch0264_00_satoshi_0051_en.ogg",
+      "crc32": "7ec7f47e",
+      "state": "confident",
+      "note": "Medium-confidence transcript: listen before treating as final.",
+      "transcript": "[pained groan]"
+    },
+    "evolved": {
+      "source": "source1",
+      "file": "ch0264_00_satoshi_0009_en.ogg",
+      "crc32": "3e5f94d9",
+      "state": "confident",
+      "transcript": "Whoa! You evolved! Awesome!"
+    },
+    "new_catch": {
+      "source": "source1",
+      "file": "ch0264_00_satoshi_0074_en.ogg",
+      "crc32": "3d2bbce9",
+      "state": "confident",
+      "transcript": "Let's go catch some Pokémon!"
+    },
+    "new_catch2": {
+      "source": "source1",
+      "file": "ch0264_00_satoshi_0045_en.ogg",
+      "crc32": "c00647b9",
+      "state": "confident",
+      "transcript": "Congrats!"
+    },
+    "blackout": {
+      "source": "source1",
+      "file": "ch0264_00_satoshi_0055_en.ogg",
+      "crc32": "8197fb7a",
+      "state": "confident",
+      "note": "Medium-confidence transcript: listen before treating as final.",
+      "transcript": "HAAAAA"
+    },
+    "blackout2": {
+      "source": "source1",
+      "file": "ch0264_00_satoshi_0064_en.ogg",
+      "crc32": "8b3ba816",
+      "state": "confident",
+      "note": "Medium-confidence transcript: listen before treating as final.",
+      "transcript": "No way!"
+    },
+    "battle_win": {
+      "source": "source1",
+      "file": "ch0264_00_satoshi_0021_en.ogg",
+      "crc32": "7af1bed9",
+      "state": "confident",
+      "transcript": "That was awesome! We should do this again!"
+    },
+    "battle_win2": {
+      "source": "source1",
+      "file": "ch0264_00_satoshi_0006_en.ogg",
+      "crc32": "4fd9b0da",
+      "state": "confident",
+      "transcript": "[laughs] Our training's payin' off!"
+    },
+    "battle_loss": {
+      "source": "source1",
+      "file": "ch0264_00_satoshi_0022_en.ogg",
+      "crc32": "631b6fc3",
+      "state": "confident",
+      "transcript": "Aw, man!"
+    },
+    "battle_loss2": {
+      "source": "source1",
+      "file": "ch0264_00_satoshi_0050_en.ogg",
+      "crc32": "82541a59",
+      "state": "confident",
+      "note": "Medium-confidence transcript: listen before treating as final.",
+      "transcript": "[disappointed 'aww']"
+    },
+    "gym_enter": {
+      "source": "source1",
+      "file": "ch0264_00_satoshi_0019_en.ogg",
+      "crc32": "bddd51ab",
+      "state": "confident",
+      "transcript": "Watch out!"
+    },
+    "gym_enter2": {
+      "source": "source1",
+      "file": "ch0264_00_satoshi_0013_en.ogg",
+      "crc32": "0aeb8fec",
+      "state": "confident",
+      "transcript": "Let's have a battle!"
+    },
+    "gym_enter3": {
+      "source": "source1",
+      "file": "ch0264_00_satoshi_0007_en.ogg",
+      "crc32": "19d00d78",
+      "state": "confident",
+      "transcript": "We're just getting started!"
+    },
+    "e4_enter": {
+      "source": "source1",
+      "file": "ch0264_00_satoshi_0077_en.ogg",
+      "crc32": "27eb8390",
+      "state": "confident",
+      "transcript": "Let's do it, Pikachu!"
+    },
+    "e4_enter2": {
+      "source": "source1",
+      "file": "ch0264_00_satoshi_0046_en.ogg",
+      "crc32": "1cceb622",
+      "state": "confident",
+      "transcript": "You can do it!"
+    },
+    "champion_enter": {
+      "source": "source1",
+      "file": "ch0264_00_satoshi_0072_en.ogg",
+      "crc32": "8120532c",
+      "state": "confident",
+      "transcript": "Hope you're ready!"
+    },
+    "champion_enter2": {
+      "source": "source1",
+      "file": "ch0264_00_satoshi_0027_en.ogg",
+      "crc32": "8e26e433",
+      "state": "confident",
+      "transcript": "I got this!"
+    },
+    "night1": {
+      "source": "source1",
+      "file": "ch0264_00_satoshi_0031_en.ogg",
+      "crc32": "0978060a",
+      "state": "confident",
+      "transcript": "It sure got dark fast, huh. I hope I get to battle some awesome sync pairs tomorrow!"
+    },
+    "morning1": {
+      "source": "source1",
+      "file": "ch0264_00_satoshi_0029_en.ogg",
+      "crc32": "df3f8dbc",
+      "state": "confident",
+      "transcript": "Good morning! I'm glad I actually woke up on time today! I oversleep a lot..."
+    }
+  },
+  "confirmed_empty": [
+    "night2",
+    "night3",
+    "morning2"
+  ]
+}

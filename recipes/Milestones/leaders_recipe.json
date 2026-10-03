@@ -1,0 +1,621 @@
+{
+  "recipe_format": 1,
+  "mod_id": "trainer_talk",
+  "schema_version": 1,
+  "pack_type": "milestone",
+  "label": "LEADERS",
+  "folder": "leaders",
+  "author": "unknown",
+  "created": "2026-10-03",
+  "sources": [
+    {
+      "id": "source1",
+      "label": "Agatha (English)",
+      "file_name": "Agatha (English).zip",
+      "zip_md5": "c95d1ce3396eb03906b0e848cf72db0b",
+      "clip_count": 76,
+      "picks": 2
+    },
+    {
+      "id": "source2",
+      "label": "Blaine (English)",
+      "file_name": "Blaine (English).zip",
+      "zip_md5": "e1f57377f96979c1b1e52d9ff94b1efc",
+      "clip_count": 75,
+      "picks": 2
+    },
+    {
+      "id": "source3",
+      "label": "Blue (Arc Suit)",
+      "file_name": "Blue (Arc Suit).zip",
+      "zip_md5": "6314afdf4793b51dc3229abdf2b53f7f",
+      "clip_count": 71,
+      "picks": 2
+    },
+    {
+      "id": "source5",
+      "label": "Blue (Neo Champion) (English)",
+      "file_name": "Blue (Neo Champion) (English).zip",
+      "zip_md5": "7cb9bd1db021c8d773357a8d97c788d5",
+      "clip_count": 71,
+      "picks": 2
+    },
+    {
+      "id": "source8",
+      "label": "Brock (English)",
+      "file_name": "Brock (English).zip",
+      "zip_md5": "a97f0ef4a29e4f36bbaeebe4801a090b",
+      "clip_count": 75,
+      "picks": 2
+    },
+    {
+      "id": "source10",
+      "label": "Bruno (English)",
+      "file_name": "Bruno (English).zip",
+      "zip_md5": "7e8cc88a82bd53781e844044d9c7f6da",
+      "clip_count": 75,
+      "picks": 2
+    },
+    {
+      "id": "source11",
+      "label": "Erika (English)",
+      "file_name": "Erika (English).zip",
+      "zip_md5": "a074bf75f121bf7fd936ad3efeafa42b",
+      "clip_count": 75,
+      "picks": 1
+    },
+    {
+      "id": "source12",
+      "label": "Erika (Palentine) (English)",
+      "file_name": "Erika (Palentine) (English).zip",
+      "zip_md5": "eff6d3dca670bc1bfad9beae58f47912",
+      "clip_count": 71,
+      "picks": 1
+    },
+    {
+      "id": "source14",
+      "label": "Giovanni (English)",
+      "file_name": "Giovanni (English).zip",
+      "zip_md5": "2f75a4eb27f6ae900a1092168d9d1e5d",
+      "clip_count": 75,
+      "picks": 1
+    },
+    {
+      "id": "source16",
+      "label": "Giovanni (Sygna Suit) (English)",
+      "file_name": "Giovanni (Sygna Suit) (English).zip",
+      "zip_md5": "f983cdc5d2a87205616ad581fe835b69",
+      "clip_count": 71,
+      "picks": 1
+    },
+    {
+      "id": "source17",
+      "label": "Koga (English)",
+      "file_name": "Koga (English).zip",
+      "zip_md5": "3c1d5ef2fd6a25f802c866c2b93b318d",
+      "clip_count": 75,
+      "picks": 2
+    },
+    {
+      "id": "source18",
+      "label": "Lance (Arc Suit)",
+      "file_name": "Lance (Arc Suit).zip",
+      "zip_md5": "6ab9a0e19349b4957a7e92502b2b38cc",
+      "clip_count": 71,
+      "picks": 2
+    },
+    {
+      "id": "source21",
+      "label": "Lorelei (English)",
+      "file_name": "Lorelei (English).zip",
+      "zip_md5": "e7368a224a68861b2abf43369e163b05",
+      "clip_count": 75,
+      "picks": 2
+    },
+    {
+      "id": "source22",
+      "label": "Lt. Surge (English)",
+      "file_name": "Lt. Surge (English).zip",
+      "zip_md5": "51caa3656f5b2c7f30afa9715edd9298",
+      "clip_count": 75,
+      "picks": 2
+    },
+    {
+      "id": "source24",
+      "label": "Misty (English)",
+      "file_name": "Misty (English).zip",
+      "zip_md5": "322c543eeda03d1360d5fb6ad400fd66",
+      "clip_count": 75,
+      "picks": 2
+    },
+    {
+      "id": "source27",
+      "label": "Sabrina (English)",
+      "file_name": "Sabrina (English).zip",
+      "zip_md5": "0f86d6cd89c7fff05504c265e04adc9b",
+      "clip_count": 75,
+      "picks": 2
+    },
+    {
+      "id": "source29",
+      "label": "Bugsy (English)",
+      "file_name": "Bugsy (English).zip",
+      "zip_md5": "07bdd00ea3167138c4abadc7b8de56d5",
+      "clip_count": 75,
+      "picks": 1
+    },
+    {
+      "id": "source30",
+      "label": "Bugsy (Winter) (English)",
+      "file_name": "Bugsy (Winter) (English).zip",
+      "zip_md5": "96b68feee476193547f4d6584e8f899d",
+      "clip_count": 71,
+      "picks": 1
+    },
+    {
+      "id": "source31",
+      "label": "Chuck (English)",
+      "file_name": "Chuck (English).zip",
+      "zip_md5": "1c124ab5757bfd6ed60020043238730f",
+      "clip_count": 71,
+      "picks": 2
+    },
+    {
+      "id": "source32",
+      "label": "Clair (New Year) (English)",
+      "file_name": "Clair (New Year) (English).zip",
+      "zip_md5": "e60c126055abc2eba4c1306b3f944e37",
+      "clip_count": 71,
+      "picks": 2
+    },
+    {
+      "id": "source34",
+      "label": "Jasmine (English)",
+      "file_name": "Jasmine (English).zip",
+      "zip_md5": "cba05982b1fe2070e10fdfbab127acb5",
+      "clip_count": 75,
+      "picks": 2
+    },
+    {
+      "id": "source35",
+      "label": "Falkner (English)",
+      "file_name": "Falkner (English).zip",
+      "zip_md5": "487054cb1c57fd40b2d59dd0ac3f6831",
+      "clip_count": 73,
+      "picks": 2
+    },
+    {
+      "id": "source37",
+      "label": "Morty (English)",
+      "file_name": "Morty (English).zip",
+      "zip_md5": "39ca8379faebf6fbe8e9cee826e23a0a",
+      "clip_count": 75,
+      "picks": 1
+    },
+    {
+      "id": "source38",
+      "label": "Morty (Fall) (English)",
+      "file_name": "Morty (Fall) (English).zip",
+      "zip_md5": "44fb71d0575ca731f7b96c1f6c36d143",
+      "clip_count": 73,
+      "picks": 1
+    },
+    {
+      "id": "source40",
+      "label": "Pryce (English)",
+      "file_name": "Pryce (English).zip",
+      "zip_md5": "4f2a3830fcc8653e8a3f7c2adc9020d1",
+      "clip_count": 75,
+      "picks": 2
+    },
+    {
+      "id": "source41",
+      "label": "Whitney (English)",
+      "file_name": "Whitney (English).zip",
+      "zip_md5": "ea3d453151948e259a1732ccc3a7f4f9",
+      "clip_count": 75,
+      "picks": 2
+    },
+    {
+      "id": "source43",
+      "label": "Will (English)",
+      "file_name": "Will (English).zip",
+      "zip_md5": "ddc7fd6782f0eac64382f69bd5ea18b7",
+      "clip_count": 75,
+      "picks": 2
+    },
+    {
+      "id": "source44",
+      "label": "Karen (English)",
+      "file_name": "Karen (English).zip",
+      "zip_md5": "de0b958b6736253eebf21642bf1a2a39",
+      "clip_count": 75,
+      "picks": 2
+    },
+    {
+      "id": "source45",
+      "label": "Janine (English)",
+      "file_name": "Janine (English).zip",
+      "zip_md5": "c3d9b4de7c1e5c238aaea4520268158c",
+      "clip_count": 75,
+      "picks": 2
+    }
+  ],
+  "slots": {
+    "brock_intro": {
+      "source": "source8",
+      "file": "ch0015_00_takeshi_0000_en.ogg",
+      "crc32": "6322f03c",
+      "state": "confident",
+      "note": "Sounds like the GYM LEADER VOICES pack's file: 98% match on words and length. Compare them.",
+      "transcript": "My name's Brock. I'm a gym leader. When it comes to rock-hard willpower, nobody can beat me."
+    },
+    "brock_outro": {
+      "source": "source8",
+      "file": "ch0015_00_takeshi_0045_en.ogg",
+      "crc32": "2c5be257",
+      "state": "confident",
+      "note": "Sounds like the GYM LEADER VOICES pack's file: 97% match on words and length. Compare them.",
+      "transcript": "Congratulations, I'm happy for you."
+    },
+    "misty_intro": {
+      "source": "source24",
+      "file": "ch0110_01_kasumi_0000_en.ogg",
+      "crc32": "db042595",
+      "state": "confident",
+      "note": "Sounds like the GYM LEADER VOICES pack's file: 98% match on words and length. Compare them.",
+      "transcript": "Have you heard of the Kanto Gym Leader they call the Tomboyish Mermaid? That's me, Misty!"
+    },
+    "misty_outro": {
+      "source": "source24",
+      "file": "ch0110_01_kasumi_0009_en.ogg",
+      "crc32": "2ec2951d",
+      "state": "confident",
+      "note": "Sounds like the GYM LEADER VOICES pack's file: 96% match on words and length. Compare them.",
+      "transcript": "Wow, what a thrill! You're amazing!"
+    },
+    "surge_intro": {
+      "source": "source22",
+      "file": "ch0035_00_matthies_0000_en.ogg",
+      "crc32": "ead91273",
+      "state": "confident",
+      "note": "Sounds like the GYM LEADER VOICES pack's file: 98% match on words and length. Compare them.",
+      "transcript": "The name's Surge. I'm the Lightning Lieutenant who battles with electric-type Pokémon."
+    },
+    "surge_outro": {
+      "source": "source22",
+      "file": "ch0035_00_matthies_0045_en.ogg",
+      "crc32": "1815252d",
+      "state": "confident",
+      "note": "Sounds like the GYM LEADER VOICES pack's file: 95% match on words and length. Compare them.",
+      "transcript": "Congrats, kid!"
+    },
+    "erika_intro": {
+      "source": "source11",
+      "file": "ch0008_00_erika_0000_en.ogg",
+      "crc32": "376fef79",
+      "state": "confident",
+      "note": "Sounds like the GYM LEADER VOICES pack's file: 96% match on words and length. Compare them.",
+      "transcript": "My name is Erica. Nice to meet you."
+    },
+    "erika_outro": {
+      "source": "source12",
+      "file": "ch0008_41_erika_0043_en.ogg",
+      "crc32": "a7e6320a",
+      "state": "confident",
+      "note": "Sounds like the GYM LEADER VOICES pack's file: 99% match on words and length. Compare them.",
+      "transcript": "Congratulations!"
+    },
+    "koga_intro": {
+      "source": "source17",
+      "file": "ch0054_00_kyo_0074_en.ogg",
+      "crc32": "3b178f6f",
+      "state": "confident",
+      "note": "Sounds like the GYM LEADER VOICES pack's file: 98% match on words and length. Compare them.",
+      "transcript": "Pokemon Battling is not merely about brute force. You shall see soon enough."
+    },
+    "koga_outro": {
+      "source": "source17",
+      "file": "ch0054_00_kyo_0045_en.ogg",
+      "crc32": "1c2130d2",
+      "state": "confident",
+      "note": "Sounds like the GYM LEADER VOICES pack's file: 96% match on words and length. Compare them.",
+      "transcript": "Truly amazing!"
+    },
+    "sabrina_intro": {
+      "source": "source27",
+      "file": "ch0114_00_natsume_0000_en.ogg",
+      "crc32": "77a4bcb8",
+      "state": "confident",
+      "note": "Sounds like the GYM LEADER VOICES pack's file: 99% match on words and length. Compare them.",
+      "transcript": "I'm Sabrina. I discovered my psychic powers as a child when I accidentally bent a spoon with my mind."
+    },
+    "sabrina_outro": {
+      "source": "source27",
+      "file": "ch0114_00_natsume_0022_en.ogg",
+      "crc32": "c9a9f95d",
+      "state": "confident",
+      "note": "Sounds like the GYM LEADER VOICES pack's file: 100% match on words and length. Compare them.",
+      "transcript": "I didn't foresee this disappointment."
+    },
+    "blaine_intro": {
+      "source": "source2",
+      "file": "ch0059_00_katsura_0000_en.ogg",
+      "crc32": "332e4076",
+      "state": "confident",
+      "note": "Closest to the pack's file by sound: sounds alike: 78% (shape 74%, pitch 93%, length 6.24 s vs 3.58 s). Compare them.",
+      "transcript": "Heh! I'm Blaine, the leader of Cinnabar Gym! People know me as the hot-headed Quizmaster!"
+    },
+    "blaine_outro": {
+      "source": "source2",
+      "file": "ch0059_00_katsura_0022_en.ogg",
+      "crc32": "4eefa17e",
+      "state": "confident",
+      "note": "Sounds like the GYM LEADER VOICES pack's file: 88% match on words and length. Compare them.",
+      "transcript": "My candles burned down to nothing!"
+    },
+    "giovanni_intro": {
+      "source": "source16",
+      "file": "ch0140_10_sakaki_0000_en.ogg",
+      "crc32": "68cc02a8",
+      "state": "confident",
+      "note": "Sounds like the GYM LEADER VOICES pack's file: 99% match on words and length. Compare them.",
+      "transcript": "I am Giovanni, leader of Team Rocket. One day the entire world will be under my control."
+    },
+    "giovanni_outro": {
+      "source": "source14",
+      "file": "ch0140_00_sakaki_0021_en.ogg",
+      "crc32": "dc0d6760",
+      "state": "confident",
+      "note": "Sounds like the GYM LEADER VOICES pack's file: 100% match on words and length. Compare them.",
+      "transcript": "A truly intense fight."
+    },
+    "lorelei_intro": {
+      "source": "source21",
+      "file": "ch0005_00_kanna_0000_en.ogg",
+      "crc32": "1cd54390",
+      "state": "confident",
+      "transcript": "I am the Ice-type Pokemon trainer Lorelei. I wonder, will you be able to make me feel the heat of battle?"
+    },
+    "lorelei_outro": {
+      "source": "source21",
+      "file": "ch0005_00_kanna_0043_en.ogg",
+      "crc32": "a63d88b8",
+      "state": "confident",
+      "note": "Sounds like the GYM LEADER VOICES pack's file: 100% match on words and length. Compare them.",
+      "transcript": "Congratulations!"
+    },
+    "bruno_intro": {
+      "source": "source10",
+      "file": "ch0057_00_shiba_0000_en.ogg",
+      "crc32": "318cf782",
+      "state": "confident",
+      "note": "Sounds like the GYM LEADER VOICES pack's file: 98% match on words and length. Compare them.",
+      "transcript": "I am Bruno of the Indigo Elite Four. My Pokémon and I always train to the extreme."
+    },
+    "bruno_outro": {
+      "source": "source10",
+      "file": "ch0057_00_shiba_0045_en.ogg",
+      "crc32": "1727b8d3",
+      "state": "confident",
+      "note": "Sounds like the GYM LEADER VOICES pack's file: 92% match on words and length. Compare them.",
+      "transcript": "Congratulations!"
+    },
+    "agatha_intro": {
+      "source": "source1",
+      "file": "ch0061_00_kikuko_0000_en.ogg",
+      "crc32": "c8c9233b",
+      "state": "confident",
+      "note": "Sounds like the GYM LEADER VOICES pack's file: 98% match on words and length. Compare them.",
+      "transcript": "I'm Agatha of the Indigo Elite Four. Let's see what you can do, child."
+    },
+    "agatha_outro": {
+      "source": "source1",
+      "file": "ch0061_00_kikuko_0022_en.ogg",
+      "crc32": "ffdc4464",
+      "state": "confident",
+      "note": "Sounds like the GYM LEADER VOICES pack's file: 95% match on words and length. Compare them.",
+      "transcript": "Well, a loss is a loss."
+    },
+    "lance_intro": {
+      "source": "source18",
+      "file": "ch0111_90_wataru_0000_en.ogg",
+      "crc32": "c9b92c9d",
+      "state": "confident",
+      "transcript": "I am Lance, the indigo league champion. Let me show you my strong and upstanding heart."
+    },
+    "lance_outro": {
+      "source": "source18",
+      "file": "ch0111_90_wataru_0020_en.ogg",
+      "crc32": "6e7b145c",
+      "state": "confident",
+      "note": "Sounds like the GYM LEADER VOICES pack's file: 99% match on words and length. Compare them.",
+      "transcript": "Onward to the final battle!"
+    },
+    "champion_intro": {
+      "source": "source5",
+      "file": "ch0021_90_green_0010_en.ogg",
+      "crc32": "4e512a4e",
+      "state": "confident",
+      "note": "Sounds like the GYM LEADER VOICES pack's file: 73% match on words and length. Compare them.",
+      "transcript": "Yo, we meet again! Hope you're at least a little stronger than the last time I saw ya."
+    },
+    "champion_outro": {
+      "source": "source3",
+      "file": "ch0021_91_green_0044_en.ogg",
+      "crc32": "dc935902",
+      "state": "confident",
+      "note": "Sounds like the GYM LEADER VOICES pack's file: 100% match on words and length. Compare them.",
+      "transcript": "Exactly what I'd expect."
+    },
+    "falkner_intro": {
+      "source": "source35",
+      "file": "ch0150_00_hayato_0000_en.ogg",
+      "crc32": "b41882fc",
+      "state": "confident",
+      "transcript": "I'm Faulkner, the Violet City Pokémon Gym Leader. I'll show you the real power of the magnificent Bird Pokémon!"
+    },
+    "falkner_outro": {
+      "source": "source35",
+      "file": "ch0150_00_hayato_0028_en.ogg",
+      "crc32": "e675d83c",
+      "state": "confident",
+      "transcript": "We'll bow out gracefully."
+    },
+    "bugsy_intro": {
+      "source": "source30",
+      "file": "ch0045_40_tsukushi_0000_en.ogg",
+      "crc32": "ace720aa",
+      "state": "confident",
+      "transcript": "I'm Bugsy! Please listen to some music that my Pokémon and I studied together!"
+    },
+    "bugsy_outro": {
+      "source": "source29",
+      "file": "ch0045_00_tsukushi_0022_en.ogg",
+      "crc32": "78b58a93",
+      "state": "confident",
+      "transcript": "Did we get squashed?"
+    },
+    "whitney_intro": {
+      "source": "source41",
+      "file": "ch0026_00_akane_0000_en.ogg",
+      "crc32": "3a9d3e92",
+      "state": "confident",
+      "transcript": "My name's Whitney, and I'm a gym leader. And I, cutie, try not to get too infatuated."
+    },
+    "whitney_outro": {
+      "source": "source41",
+      "file": "ch0026_00_akane_0045_en.ogg",
+      "crc32": "f1671dad",
+      "state": "confident",
+      "transcript": "Congratulations!"
+    },
+    "morty_intro": {
+      "source": "source37",
+      "file": "ch0148_00_matsuba_0000_en.ogg",
+      "crc32": "9bbdfdd5",
+      "state": "confident",
+      "transcript": "My name's Morty. I'm a critiques gym leader. Say, do you want to be part of my training?"
+    },
+    "morty_outro": {
+      "source": "source38",
+      "file": "ch0148_40_matsuba_0009_en.ogg",
+      "crc32": "289cc681",
+      "state": "confident",
+      "transcript": "I believe in you and your power."
+    },
+    "chuck_intro": {
+      "source": "source31",
+      "file": "ch0171_00_shijima_0000_en.ogg",
+      "crc32": "2a5f4958",
+      "state": "confident",
+      "transcript": "Yo, Chuck here. I'm the gym leader of Seanwood, and I train under a pounding waterfall every day."
+    },
+    "chuck_outro": {
+      "source": "source31",
+      "file": "ch0171_00_shijima_0021_en.ogg",
+      "crc32": "007bd592",
+      "state": "confident",
+      "transcript": "That was great training! Thanks!"
+    },
+    "jasmine_intro": {
+      "source": "source34",
+      "file": "ch0113_00_mikan_0000_en.ogg",
+      "crc32": "72521f2a",
+      "state": "confident",
+      "transcript": "I am Jasmine, a gym leader. I use the... Kring! Steel type!"
+    },
+    "jasmine_outro": {
+      "source": "source34",
+      "file": "ch0113_00_mikan_0028_en.ogg",
+      "crc32": "b728f700",
+      "state": "confident",
+      "transcript": "We did our best!"
+    },
+    "pryce_intro": {
+      "source": "source40",
+      "file": "ch0032_00_yanagi_0000_en.ogg",
+      "crc32": "ef1a2cbd",
+      "state": "confident",
+      "transcript": "My name is Price. I'm a gym leader. I have forged my path through life with ice-type Pokémon by my side."
+    },
+    "pryce_outro": {
+      "source": "source40",
+      "file": "ch0032_00_yanagi_0022_en.ogg",
+      "crc32": "04d1ca0e",
+      "state": "confident",
+      "transcript": "Seems as if my luck has run out."
+    },
+    "clair_intro": {
+      "source": "source32",
+      "file": "ch0028_40_ibuki_0000_en.ogg",
+      "crc32": "737225ad",
+      "state": "confident",
+      "transcript": "I am Claire. You should feel honored to team up with the world's best Dragon Master."
+    },
+    "clair_outro": {
+      "source": "source32",
+      "file": "ch0028_40_ibuki_0045_en.ogg",
+      "crc32": "e47459a6",
+      "state": "confident",
+      "transcript": "Congratulations!"
+    },
+    "will_intro": {
+      "source": "source43",
+      "file": "ch0047_00_itsuki_0010_en.ogg",
+      "crc32": "410222aa",
+      "state": "confident",
+      "transcript": "What's beneath my mask, you ask? Well, stick with me long enough and you might find out."
+    },
+    "will_outro": {
+      "source": "source43",
+      "file": "ch0047_00_itsuki_0045_en.ogg",
+      "crc32": "0d787f91",
+      "state": "confident",
+      "transcript": "Congratulations are in order."
+    },
+    "karen_intro": {
+      "source": "source44",
+      "file": "ch0062_00_karin_0000_en.ogg",
+      "crc32": "a3f698ae",
+      "state": "confident",
+      "transcript": "I'm Karen of the Indigo Elite Four. I hope you can at least provide me a bit of entertainment."
+    },
+    "karen_outro": {
+      "source": "source44",
+      "file": "ch0062_00_karin_0006_en.ogg",
+      "crc32": "1fccd3fd",
+      "state": "confident",
+      "transcript": "I suppose I'm satisfied."
+    },
+    "janine_intro": {
+      "source": "source45",
+      "file": "ch0060_00_anzu_0000_en.ogg",
+      "crc32": "68350f72",
+      "state": "confident",
+      "transcript": "Janine of Fuchsia Gym. That's me! I'm a ninja Pokémon trainer and master of all things poison!"
+    },
+    "janine_outro": {
+      "source": "source45",
+      "file": "ch0060_00_anzu_0022_en.ogg",
+      "crc32": "d97f36e5",
+      "state": "confident",
+      "transcript": "Ah, we'll win next time!"
+    },
+    "blue_intro": {
+      "source": "source5",
+      "file": "ch0021_90_green_0000_en.ogg",
+      "crc32": "1eacde06",
+      "state": "confident",
+      "transcript": "Hey, I'm Blue. I'm one of the most talented top-level trainers to come out of Kanto."
+    },
+    "blue_outro": {
+      "source": "source3",
+      "file": "ch0021_91_green_0045_en.ogg",
+      "crc32": "e0fc3d00",
+      "state": "confident",
+      "transcript": "Congrats!"
+    }
+  },
+  "confirmed_empty": []
+}

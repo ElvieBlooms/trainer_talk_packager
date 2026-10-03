@@ -1,0 +1,423 @@
+{
+  "recipe_format": 1,
+  "mod_id": "trainer_talk",
+  "schema_version": 1,
+  "pack_type": "trainer",
+  "label": "LEAF",
+  "folder": "leaf",
+  "author": "unknown",
+  "created": "2026-10-03",
+  "sources": [
+    {
+      "id": "source1",
+      "label": "Leaf (English)",
+      "file_name": "Leaf (English).zip",
+      "zip_md5": "7958bda2710a04f68ed75b3e53051040",
+      "clip_count": 75,
+      "picks": 19
+    },
+    {
+      "id": "source2",
+      "label": "Leaf (Neo Champion) (English)",
+      "file_name": "Leaf (Neo Champion) (English).zip",
+      "zip_md5": "a7900a0948ae42f8f2f64c209aa346a4",
+      "clip_count": 71,
+      "picks": 13
+    },
+    {
+      "id": "source3",
+      "label": "Leaf (Sygna Suit) (English)",
+      "file_name": "Leaf (Sygna Suit) (English).zip",
+      "zip_md5": "967c53c6a6e936af1625091ec1bcf312",
+      "clip_count": 75,
+      "picks": 16
+    }
+  ],
+  "slots": {
+    "new_game": {
+      "source": "source2",
+      "file": "ch0017_90_leaf_0000_en.ogg",
+      "crc32": "5b0ffc21",
+      "state": "confident",
+      "note": "Same audio as the LEAF pack's file.",
+      "transcript": "I'm Leaf! Let's burn bright with our love for Pokémon!"
+    },
+    "continue1": {
+      "source": "source1",
+      "file": "ch0017_00_leaf_0011_en.ogg",
+      "crc32": "83e4a117",
+      "state": "confident",
+      "note": "Same audio as the LEAF pack's file.",
+      "transcript": "Come on, I'll lead the way!"
+    },
+    "continue2": {
+      "source": "source3",
+      "file": "ch0017_10_leaf_0011_en.ogg",
+      "crc32": "954fa531",
+      "state": "confident",
+      "note": "Same audio as the LEAF pack's file.",
+      "transcript": "This looks like a job for me!"
+    },
+    "continue3": {
+      "source": "source2",
+      "file": "ch0017_90_leaf_0007_en.ogg",
+      "crc32": "6653c456",
+      "state": "confident",
+      "note": "Same audio as the LEAF pack's file.",
+      "transcript": "My heart is on fire!"
+    },
+    "continue4": {
+      "source": "source1",
+      "file": "ch0017_00_leaf_0073_en.ogg",
+      "crc32": "7e648dbb",
+      "state": "confident",
+      "note": "Same audio as the LEAF pack's file.",
+      "transcript": "I hope we get to meet all kinds of fun, interesting trainers and Pokémon!"
+    },
+    "continue5": {
+      "source": "source2",
+      "file": "ch0017_90_leaf_0013_en.ogg",
+      "crc32": "595f347b",
+      "state": "confident",
+      "note": "Same audio as the LEAF pack's file.",
+      "transcript": "Okay, let's begin!"
+    },
+    "hit1": {
+      "source": "source1",
+      "file": "ch0017_00_leaf_0015_en.ogg",
+      "crc32": "1b28b1a8",
+      "state": "confident",
+      "note": "Same audio as the LEAF pack's file.",
+      "transcript": "Get em!"
+    },
+    "hit2": {
+      "source": "source1",
+      "file": "ch0017_00_leaf_0072_en.ogg",
+      "crc32": "8b2a7664",
+      "state": "confident",
+      "note": "Same audio as the LEAF pack's file.",
+      "transcript": "Hope you're ready!"
+    },
+    "hit3": {
+      "source": "source3",
+      "file": "ch0017_10_leaf_0013_en.ogg",
+      "crc32": "6c1a55a2",
+      "state": "confident",
+      "note": "Same audio as the LEAF pack's file.",
+      "transcript": "You ready for this?"
+    },
+    "status_enemy": {
+      "source": "source1",
+      "file": "ch0017_00_leaf_0012_en.ogg",
+      "crc32": "fe4f697b",
+      "state": "confident",
+      "note": "Same audio as the LEAF pack's file.",
+      "transcript": "We're the best that we can be!"
+    },
+    "status_enemy2": {
+      "source": "source3",
+      "file": "ch0017_10_leaf_0018_en.ogg",
+      "crc32": "f100955e",
+      "state": "confident",
+      "note": "Same audio as the LEAF pack's file.",
+      "transcript": "Very nice!"
+    },
+    "status_player": {
+      "source": "source1",
+      "file": "ch0017_00_leaf_0057_en.ogg",
+      "crc32": "368b8560",
+      "state": "confident",
+      "note": "Same audio as the LEAF pack's file.",
+      "transcript": "Ugh."
+    },
+    "status_player2": {
+      "source": "source3",
+      "file": "ch0017_10_leaf_0055_en.ogg",
+      "crc32": "cf5b94d5",
+      "state": "confident",
+      "note": "Same audio as the LEAF pack's file.",
+      "transcript": "Haha!"
+    },
+    "hit_crit": {
+      "source": "source1",
+      "file": "ch0017_00_leaf_0007_en.ogg",
+      "crc32": "c8d0f7fc",
+      "state": "confident",
+      "note": "Same audio as the LEAF pack's file.",
+      "transcript": "Now that's what I call a breakthrough!"
+    },
+    "hit_crit2": {
+      "source": "source2",
+      "file": "ch0017_90_leaf_0016_en.ogg",
+      "crc32": "13cec0fc",
+      "state": "confident",
+      "note": "Same audio as the LEAF pack's file.",
+      "transcript": "How's this?"
+    },
+    "move_miss": {
+      "source": "source3",
+      "file": "ch0017_10_leaf_0022_en.ogg",
+      "crc32": "0f329392",
+      "state": "confident",
+      "note": "Same audio as the LEAF pack's file.",
+      "transcript": "You gotta be kidding me!"
+    },
+    "move_miss2": {
+      "source": "source2",
+      "file": "ch0017_90_leaf_0052_en.ogg",
+      "crc32": "de89cf9b",
+      "state": "confident",
+      "note": "Same audio as the LEAF pack's file.",
+      "transcript": "No way!"
+    },
+    "catch_fail": {
+      "source": "source2",
+      "file": "ch0017_90_leaf_0022_en.ogg",
+      "crc32": "34dbaec2",
+      "state": "confident",
+      "note": "Same audio as the LEAF pack's file.",
+      "transcript": "That's a shame."
+    },
+    "catch_fail2": {
+      "source": "source2",
+      "file": "ch0017_90_leaf_0042_en.ogg",
+      "crc32": "9509faa4",
+      "state": "confident",
+      "note": "Same audio as the LEAF pack's file.",
+      "transcript": "Ehhhh heheheh"
+    },
+    "run_success": {
+      "source": "source3",
+      "file": "ch0017_10_leaf_0016_en.ogg",
+      "crc32": "af9911e3",
+      "state": "confident",
+      "note": "Same audio as the LEAF pack's file.",
+      "transcript": "Let's go!"
+    },
+    "run_success2": {
+      "source": "source3",
+      "file": "ch0017_10_leaf_0026_en.ogg",
+      "crc32": "2582163e",
+      "state": "confident",
+      "note": "Same audio as the LEAF pack's file.",
+      "transcript": "Go Go!"
+    },
+    "run_fail": {
+      "source": "source3",
+      "file": "ch0017_10_leaf_0072_en.ogg",
+      "crc32": "25909263",
+      "state": "confident",
+      "note": "Same audio as the LEAF pack's file.",
+      "transcript": "You sure you wanna take us on?"
+    },
+    "run_fail2": {
+      "source": "source1",
+      "file": "ch0017_00_leaf_0050_en.ogg",
+      "crc32": "b1b3c4f7",
+      "state": "confident",
+      "note": "Same audio as the LEAF pack's file.",
+      "transcript": "BOOF!"
+    },
+    "faint_enemy": {
+      "source": "source1",
+      "file": "ch0017_00_leaf_0021_en.ogg",
+      "crc32": "11fa1165",
+      "state": "confident",
+      "note": "Same audio as the LEAF pack's file.",
+      "transcript": "I knew we'd win!"
+    },
+    "faint_enemy2": {
+      "source": "source3",
+      "file": "ch0017_10_leaf_0008_en.ogg",
+      "crc32": "be5c2339",
+      "state": "confident",
+      "note": "Same audio as the LEAF pack's file.",
+      "transcript": "Alright! Top of our game!"
+    },
+    "faint_player": {
+      "source": "source1",
+      "file": "ch0017_00_leaf_0022_en.ogg",
+      "crc32": "a1663b2f",
+      "state": "confident",
+      "note": "Same audio as the LEAF pack's file.",
+      "transcript": "Wait... WHAT?!"
+    },
+    "faint_player2": {
+      "source": "source3",
+      "file": "ch0017_10_leaf_0062_en.ogg",
+      "crc32": "986ed27b",
+      "state": "confident",
+      "note": "Same audio as the LEAF pack's file.",
+      "transcript": "Sorry!"
+    },
+    "evolved": {
+      "source": "source1",
+      "file": "ch0017_00_leaf_0009_en.ogg",
+      "crc32": "bba41657",
+      "state": "confident",
+      "note": "Same audio as the LEAF pack's file.",
+      "transcript": "You still look just as cute as before!"
+    },
+    "new_catch": {
+      "source": "source1",
+      "file": "ch0017_00_leaf_0043_en.ogg",
+      "crc32": "fbe64f7c",
+      "state": "confident",
+      "note": "Same audio as the LEAF pack's file.",
+      "transcript": "That was great!"
+    },
+    "new_catch2": {
+      "source": "source3",
+      "file": "ch0017_10_leaf_0027_en.ogg",
+      "crc32": "9479be74",
+      "state": "confident",
+      "note": "Same audio as the LEAF pack's file.",
+      "transcript": "In it to win it!"
+    },
+    "blackout": {
+      "source": "source2",
+      "file": "ch0017_90_leaf_0062_en.ogg",
+      "crc32": "026b392c",
+      "state": "confident",
+      "note": "Same audio as the LEAF pack's file.",
+      "transcript": "Sorry."
+    },
+    "blackout2": {
+      "source": "source1",
+      "file": "ch0017_00_leaf_0062_en.ogg",
+      "crc32": "00a3dad7",
+      "state": "confident",
+      "note": "Same audio as the LEAF pack's file.",
+      "transcript": "I'm sorry."
+    },
+    "battle_win": {
+      "source": "source1",
+      "file": "ch0017_00_leaf_0008_en.ogg",
+      "crc32": "dc74474c",
+      "state": "confident",
+      "note": "Same audio as the LEAF pack's file.",
+      "transcript": "We're getting pretty strong, huh?"
+    },
+    "battle_win2": {
+      "source": "source2",
+      "file": "ch0017_90_leaf_0044_en.ogg",
+      "crc32": "e1876ff3",
+      "state": "confident",
+      "note": "Same audio as the LEAF pack's file.",
+      "transcript": "Well done!"
+    },
+    "battle_loss": {
+      "source": "source3",
+      "file": "ch0017_10_leaf_0028_en.ogg",
+      "crc32": "e2891a11",
+      "state": "confident",
+      "note": "Same audio as the LEAF pack's file.",
+      "transcript": "No shame in doing your best!"
+    },
+    "battle_loss2": {
+      "source": "source2",
+      "file": "ch0017_90_leaf_0057_en.ogg",
+      "crc32": "f7de2f07",
+      "state": "confident",
+      "note": "Same audio as the LEAF pack's file.",
+      "transcript": "Ugh!"
+    },
+    "gym_enter": {
+      "source": "source1",
+      "file": "ch0017_00_leaf_0023_en.ogg",
+      "crc32": "f1746f77",
+      "state": "confident",
+      "note": "Same audio as the LEAF pack's file.",
+      "transcript": "Let's do it!"
+    },
+    "gym_enter2": {
+      "source": "source1",
+      "file": "ch0017_00_leaf_0027_en.ogg",
+      "crc32": "1bf7bc16",
+      "state": "confident",
+      "note": "Same audio as the LEAF pack's file.",
+      "transcript": "Leave it to me!"
+    },
+    "gym_enter3": {
+      "source": "source1",
+      "file": "ch0017_00_leaf_0046_en.ogg",
+      "crc32": "56d63b4a",
+      "state": "confident",
+      "note": "Same audio as the LEAF pack's file.",
+      "transcript": "You've got this!"
+    },
+    "e4_enter": {
+      "source": "source1",
+      "file": "ch0017_00_leaf_0010_en.ogg",
+      "crc32": "e148934e",
+      "state": "confident",
+      "note": "Same audio as the LEAF pack's file.",
+      "transcript": "No one loves Pokémon more than I do. I put my heart and soul into every single battle!"
+    },
+    "e4_enter2": {
+      "source": "source2",
+      "file": "ch0017_90_leaf_0071_en.ogg",
+      "crc32": "e31b63f1",
+      "state": "confident",
+      "note": "Same audio as the LEAF pack's file.",
+      "transcript": "This is our power!"
+    },
+    "champion_enter": {
+      "source": "source2",
+      "file": "ch0017_90_leaf_0073_en.ogg",
+      "crc32": "b553d28d",
+      "state": "confident",
+      "note": "Same audio as the LEAF pack's file.",
+      "transcript": "I can overcome anything, as long as I have my Pokémon with me!"
+    },
+    "champion_enter2": {
+      "source": "source2",
+      "file": "ch0017_90_leaf_0077_en.ogg",
+      "crc32": "c9775cec",
+      "state": "confident",
+      "note": "Same audio as the LEAF pack's file.",
+      "transcript": "Can't stop this heat!"
+    },
+    "night1": {
+      "source": "source3",
+      "file": "ch0017_10_leaf_0034_en.ogg",
+      "crc32": "804cc876",
+      "state": "confident",
+      "note": "Same audio as the LEAF pack's file.",
+      "transcript": "*Yawn* So Sleepy."
+    },
+    "night2": {
+      "source": "source1",
+      "file": "ch0017_00_leaf_0034_en.ogg",
+      "crc32": "ba1c5faa",
+      "state": "confident",
+      "note": "Same audio as the LEAF pack's file.",
+      "transcript": "You'd think I would hate the dark, but actually, I don't. There are lots of Pokémon that can only be found at night."
+    },
+    "night3": {
+      "source": "source3",
+      "file": "ch0017_10_leaf_0031_en.ogg",
+      "crc32": "9fc0efe3",
+      "state": "confident",
+      "note": "Same audio as the LEAF pack's file.",
+      "transcript": "Time to continue our super exciting heart pounding adventures in Dreamland."
+    },
+    "morning1": {
+      "source": "source3",
+      "file": "ch0017_10_leaf_0029_en.ogg",
+      "crc32": "440f7c6d",
+      "state": "confident",
+      "note": "Same audio as the LEAF pack's file.",
+      "transcript": "Brush that sleepiness away. Say it loud and say it proud. Good morning!"
+    },
+    "morning2": {
+      "source": "source3",
+      "file": "ch0017_10_leaf_0032_en.ogg",
+      "crc32": "c79b2707",
+      "state": "confident",
+      "note": "Same audio as the LEAF pack's file.",
+      "transcript": "Flowers bloom in the morning. I gotta get going so I can see it happen."
+    }
+  },
+  "confirmed_empty": []
+}

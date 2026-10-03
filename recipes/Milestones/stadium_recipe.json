@@ -1,0 +1,403 @@
+{
+  "recipe_format": 1,
+  "mod_id": "trainer_talk",
+  "schema_version": 1,
+  "pack_type": "milestone",
+  "label": "STADIUM",
+  "folder": "stadium",
+  "author": "unknown",
+  "created": "2026-10-03",
+  "sources": [
+    {
+      "id": "source1",
+      "label": "Nintendo 64 - Pokemon Stadium - Voices - Announcer (English)",
+      "file_name": "Nintendo 64 - Pokemon Stadium - Voices - Announcer (English).zip",
+      "zip_md5": "85b52c8c18d0526b7e4761218d6554cf",
+      "clip_count": 640,
+      "picks": 5
+    },
+    {
+      "id": "source2",
+      "label": "Nintendo 64 - Pokemon Stadium 2 - Voices - Announcer - Battle Commentary",
+      "file_name": "Nintendo 64 - Pokemon Stadium 2 - Voices - Announcer - Battle Commentary.zip",
+      "zip_md5": "3abbfcc9012ac19e8ebbc1398c38dbc4",
+      "clip_count": 542,
+      "picks": 25
+    },
+    {
+      "id": "source3",
+      "label": "Nintendo 64 - Pokemon Stadium 2 - Voices - Announcer - Battle Introductions",
+      "file_name": "Nintendo 64 - Pokemon Stadium 2 - Voices - Announcer - Battle Introductions.zip",
+      "zip_md5": "7fed2195003c28e518f3e2ada712a75a",
+      "clip_count": 69,
+      "picks": 20
+    }
+  ],
+  "slots": {
+    "brock_intro": {
+      "source": "source3",
+      "file": "vs brock.wav",
+      "crc32": "385bb6a7",
+      "state": "confident",
+      "note": "Sounds like the STADIUM ANNOUNCER pack's file: 61% match on words and length. Compare them.",
+      "transcript": "The challenger faces Brock, Pewter's gym leader. I hope the challenger will go at Brock with rock-hard determination!"
+    },
+    "brock_outro": {
+      "source": "source2",
+      "file": "BANK_3EA_INSTR_0000_SND_0000.wav",
+      "crc32": "ae73085e",
+      "state": "confident",
+      "transcript": "And there goes the battle!"
+    },
+    "misty_intro": {
+      "source": "source3",
+      "file": "vs misty.wav",
+      "crc32": "b8a9c48d",
+      "state": "confident",
+      "note": "Sounds like the STADIUM ANNOUNCER pack's file: 96% match on words and length. Compare them.",
+      "transcript": "Cerulean gym's Misty is up to the challenge! The heat of the battle is sure to turn the water attacks of her water Pokémon into steam!"
+    },
+    "misty_outro": {
+      "source": "source2",
+      "file": "BANK_3EA_INSTR_0000_SND_0000.wav",
+      "crc32": "ae73085e",
+      "state": "confident",
+      "transcript": "And there goes the battle!"
+    },
+    "surge_intro": {
+      "source": "source3",
+      "file": "vs lt surge.wav",
+      "crc32": "bc50ec5c",
+      "state": "confident",
+      "note": "Sounds like the STADIUM ANNOUNCER pack's file: 96% match on words and length. Compare them.",
+      "transcript": "Lieutenant Surge of Vermillion gym awaits the challenger. Can the challenger withstand the devastating electrical attacks from his Pokémon to score a win?"
+    },
+    "surge_outro": {
+      "source": "source2",
+      "file": "BANK_3EA_INSTR_0000_SND_0000.wav",
+      "crc32": "ae73085e",
+      "state": "confident",
+      "transcript": "And there goes the battle!"
+    },
+    "erika_intro": {
+      "source": "source3",
+      "file": "vs erika.wav",
+      "crc32": "fb8b4ee6",
+      "state": "confident",
+      "note": "Sounds like the STADIUM ANNOUNCER pack's file: 95% match on words and length. Compare them.",
+      "transcript": "It's a battle against Erika of the Celadon Gym, a trainer of grass-type Pokémon. Don't let her graceful demeanor fool you. She'll be greeting the challenger with a stable of tough Pokémon!"
+    },
+    "erika_outro": {
+      "source": "source2",
+      "file": "BANK_3EA_INSTR_0000_SND_0000.wav",
+      "crc32": "ae73085e",
+      "state": "confident",
+      "transcript": "And there goes the battle!"
+    },
+    "koga_intro": {
+      "source": "source3",
+      "file": "vs koga.wav",
+      "crc32": "493dbbb2",
+      "state": "confident",
+      "note": "Sounds like the STADIUM ANNOUNCER pack's file: 96% match on words and length. Compare them.",
+      "transcript": "The next opponent is Koga. The challenger must avoid being mesmerized by this skillful ninja."
+    },
+    "koga_outro": {
+      "source": "source2",
+      "file": "BANK_3EA_INSTR_0000_SND_0000.wav",
+      "crc32": "ae73085e",
+      "state": "confident",
+      "transcript": "And there goes the battle!"
+    },
+    "sabrina_intro": {
+      "source": "source3",
+      "file": "vs sabrina.wav",
+      "crc32": "fc9d0e85",
+      "state": "confident",
+      "note": "Sounds like the STADIUM ANNOUNCER pack's file: 92% match on words and length. Compare them.",
+      "transcript": "This battle is against Sabrina of Saffron Gym. Will the challenger's Pokémon be sharp enough to avoid being baffled by her psychic Pokémon?"
+    },
+    "sabrina_outro": {
+      "source": "source2",
+      "file": "BANK_3EA_INSTR_0000_SND_0000.wav",
+      "crc32": "ae73085e",
+      "state": "confident",
+      "transcript": "And there goes the battle!"
+    },
+    "blaine_intro": {
+      "source": "source3",
+      "file": "vs blaine.wav",
+      "crc32": "bdcb579a",
+      "state": "confident",
+      "note": "Sounds like the STADIUM ANNOUNCER pack's file: 94% match on words and length. Compare them.",
+      "transcript": "Cinnabar gym leader Blaine is coming up! The challenger must tread lightly to avoid being scorched by Blaine's fearsome fire Pokémon!"
+    },
+    "blaine_outro": {
+      "source": "source2",
+      "file": "BANK_3EA_INSTR_0000_SND_0000.wav",
+      "crc32": "ae73085e",
+      "state": "confident",
+      "transcript": "And there goes the battle!"
+    },
+    "giovanni_intro": {
+      "source": "source1",
+      "file": "BANK_E6_INSTR_0000_SND_0000.wav",
+      "crc32": "fa135387",
+      "state": "confident",
+      "note": "Sounds like the STADIUM ANNOUNCER pack's file: 93% match on words and length. Compare them.",
+      "transcript": "This is it! The final gym leader, Giovanni, the don of ground Pokémon! The challenger has to work hard for the win!"
+    },
+    "giovanni_outro": {
+      "source": "source2",
+      "file": "BANK_3EA_INSTR_0000_SND_0000.wav",
+      "crc32": "ae73085e",
+      "state": "confident",
+      "transcript": "And there goes the battle!"
+    },
+    "lorelei_intro": {
+      "source": "source1",
+      "file": "BANK_E7_INSTR_0000_SND_0000.wav",
+      "crc32": "d85d15b0",
+      "state": "confident",
+      "note": "Sounds like the STADIUM ANNOUNCER pack's file: 89% match on words and length. Compare them.",
+      "transcript": "The challenger now faces the Elite Four. The first opponent is Lorelei."
+    },
+    "lorelei_outro": {
+      "source": "source2",
+      "file": "BANK_3EA_INSTR_0000_SND_0000.wav",
+      "crc32": "ae73085e",
+      "state": "confident",
+      "transcript": "And there goes the battle!"
+    },
+    "bruno_intro": {
+      "source": "source1",
+      "file": "BANK_E8_INSTR_0000_SND_0000.wav",
+      "crc32": "1d41f5f0",
+      "state": "confident",
+      "note": "Sounds like the STADIUM ANNOUNCER pack's file: 88% match on words and length. Compare them.",
+      "transcript": "The next adversary is Bruno. He is one rugged opponent."
+    },
+    "bruno_outro": {
+      "source": "source2",
+      "file": "BANK_3EA_INSTR_0000_SND_0000.wav",
+      "crc32": "ae73085e",
+      "state": "confident",
+      "transcript": "And there goes the battle!"
+    },
+    "agatha_intro": {
+      "source": "source1",
+      "file": "BANK_E9_INSTR_0000_SND_0000.wav",
+      "crc32": "6e8a9ac6",
+      "state": "confident",
+      "note": "Sounds like the STADIUM ANNOUNCER pack's file: 91% match on words and length. Compare them.",
+      "transcript": "Next up, Agatha, another daunting foe. What strategy will work against this wily lady?"
+    },
+    "agatha_outro": {
+      "source": "source2",
+      "file": "BANK_3EA_INSTR_0000_SND_0000.wav",
+      "crc32": "ae73085e",
+      "state": "confident",
+      "transcript": "And there goes the battle!"
+    },
+    "lance_intro": {
+      "source": "source3",
+      "file": "vs lance.wav",
+      "crc32": "fc15bc1e",
+      "state": "confident",
+      "note": "Sounds like the STADIUM ANNOUNCER pack's file: 90% match on words and length. Compare them.",
+      "transcript": "Finally, this is absolutely it! The last battle! The opponent is Lance! The curtains have risen for this fateful encounter!"
+    },
+    "lance_outro": {
+      "source": "source2",
+      "file": "BANK_3EA_INSTR_0000_SND_0000.wav",
+      "crc32": "ae73085e",
+      "state": "confident",
+      "transcript": "And there goes the battle!"
+    },
+    "champion_intro": {
+      "source": "source1",
+      "file": "BANK_EB_INSTR_0000_SND_0000.wav",
+      "crc32": "bc7374e2",
+      "state": "confident",
+      "note": "Sounds like the STADIUM ANNOUNCER pack's file: 75% match on words and length. Compare them.",
+      "transcript": "This is truly it! The final battle against the rival! This is the final act in a long and arduous quest in the gym leader castle!"
+    },
+    "champion_outro": {
+      "source": "source2",
+      "file": "BANK_3EB_INSTR_0000_SND_0000.wav",
+      "crc32": "3d39f53b",
+      "state": "confident",
+      "note": "Sounds like the STADIUM ANNOUNCER pack's file: 94% match on words and length. Compare them.",
+      "transcript": "Congratulations! The champion has been decided!"
+    },
+    "falkner_intro": {
+      "source": "source3",
+      "file": "vs falkner.wav",
+      "crc32": "605bbb6c",
+      "state": "confident",
+      "transcript": "The first gym leader is Faulkner, the flying type Pokémon user from Violet Gym. What strategy will the challenger employ against him?"
+    },
+    "falkner_outro": {
+      "source": "source2",
+      "file": "BANK_3EA_INSTR_0000_SND_0000.wav",
+      "crc32": "ae73085e",
+      "state": "confident",
+      "transcript": "And there goes the battle!"
+    },
+    "bugsy_intro": {
+      "source": "source3",
+      "file": "vs bugsy.wav",
+      "crc32": "4b65f4fb",
+      "state": "confident",
+      "transcript": "This battle is against Bugsy, the Azalea gym leader. How will the challenger deal with the onslaught of Bug Pokemon?"
+    },
+    "bugsy_outro": {
+      "source": "source2",
+      "file": "BANK_3EA_INSTR_0000_SND_0000.wav",
+      "crc32": "ae73085e",
+      "state": "confident",
+      "transcript": "And there goes the battle!"
+    },
+    "whitney_intro": {
+      "source": "source3",
+      "file": "vs whitney.wav",
+      "crc32": "c91eeee6",
+      "state": "confident",
+      "transcript": "The challenger now faces Whitney, Goldenrod's gym leader. The moves dolled out by her normal type Pokemon are nothing short of awesome. Let's see if the challenger has what it takes to win."
+    },
+    "whitney_outro": {
+      "source": "source2",
+      "file": "BANK_3EA_INSTR_0000_SND_0000.wav",
+      "crc32": "ae73085e",
+      "state": "confident",
+      "transcript": "And there goes the battle!"
+    },
+    "morty_intro": {
+      "source": "source3",
+      "file": "vs morty.wav",
+      "crc32": "5088d7f2",
+      "state": "confident",
+      "transcript": "Here we are, the battle against Ecruteak's gym leader, Morty. Will the challenger be able to advance in the face of persistent attacks by his ghost type Pokémon?"
+    },
+    "morty_outro": {
+      "source": "source2",
+      "file": "BANK_3EA_INSTR_0000_SND_0000.wav",
+      "crc32": "ae73085e",
+      "state": "confident",
+      "transcript": "And there goes the battle!"
+    },
+    "chuck_intro": {
+      "source": "source3",
+      "file": "vs chuck.wav",
+      "crc32": "ca4f57d2",
+      "state": "confident",
+      "transcript": "The Challenger faces Cianwood Jim's Chuck, a user of fighting Pokémon. Let's hope the Challenger doesn't suffer the indignity of an easy knockout."
+    },
+    "chuck_outro": {
+      "source": "source2",
+      "file": "BANK_3EA_INSTR_0000_SND_0000.wav",
+      "crc32": "ae73085e",
+      "state": "confident",
+      "transcript": "And there goes the battle!"
+    },
+    "jasmine_intro": {
+      "source": "source3",
+      "file": "vs jasmine.wav",
+      "crc32": "33b25ef0",
+      "state": "confident",
+      "transcript": "The challenger has moved on to Olivine Gym. The only opponent here is the Gym Leader, Jasmine. How will the challenger fare against Jasmine's powerful Steel-type Pokémon?"
+    },
+    "jasmine_outro": {
+      "source": "source2",
+      "file": "BANK_3EA_INSTR_0000_SND_0000.wav",
+      "crc32": "ae73085e",
+      "state": "confident",
+      "transcript": "And there goes the battle!"
+    },
+    "pryce_intro": {
+      "source": "source3",
+      "file": "vs pryce.wav",
+      "crc32": "ec930b43",
+      "state": "confident",
+      "transcript": "This is a battle against Price, the leader of Mahogany Gym. The challenger will have to be alert for Price's powerful Ice Pokemon and their freezing attacks."
+    },
+    "pryce_outro": {
+      "source": "source2",
+      "file": "BANK_3EA_INSTR_0000_SND_0000.wav",
+      "crc32": "ae73085e",
+      "state": "confident",
+      "transcript": "And there goes the battle!"
+    },
+    "clair_intro": {
+      "source": "source3",
+      "file": "vs clair.wav",
+      "crc32": "911e8cf0",
+      "state": "confident",
+      "transcript": "The challenger has finally made it to the final gym leader, Claire of Blackthorn Gym. Let's see if the challenger can snatch victory from her ferocious dragon Pokémon!"
+    },
+    "clair_outro": {
+      "source": "source2",
+      "file": "BANK_3EA_INSTR_0000_SND_0000.wav",
+      "crc32": "ae73085e",
+      "state": "confident",
+      "transcript": "And there goes the battle!"
+    },
+    "will_intro": {
+      "source": "source3",
+      "file": "vs will.wav",
+      "crc32": "4c330ec4",
+      "state": "confident",
+      "transcript": "Woah! Following the challenger's victories over the gym leaders, the Elite Four have barred the way. The lead-off babbler is Will, the psychic Pokémon user."
+    },
+    "will_outro": {
+      "source": "source2",
+      "file": "BANK_3EA_INSTR_0000_SND_0000.wav",
+      "crc32": "ae73085e",
+      "state": "confident",
+      "transcript": "And there goes the battle!"
+    },
+    "karen_intro": {
+      "source": "source3",
+      "file": "vs karen.wav",
+      "crc32": "cd832c47",
+      "state": "confident",
+      "transcript": "And now the challenger faces Karen, the last of the Elite Four. Will the challenger be able to thwart her dark type Pokémon and taste sweet victory?"
+    },
+    "karen_outro": {
+      "source": "source2",
+      "file": "BANK_3EA_INSTR_0000_SND_0000.wav",
+      "crc32": "ae73085e",
+      "state": "confident",
+      "transcript": "And there goes the battle!"
+    },
+    "janine_intro": {
+      "source": "source3",
+      "file": "vs janine.wav",
+      "crc32": "2a1a8f48",
+      "state": "confident",
+      "transcript": "The opponent this time is Janine of Fuchsia Gym. She inherited her outstanding battle smarts from her father, Koga. Let's see if the challenger's Pokémon can withstand being poisoned here."
+    },
+    "janine_outro": {
+      "source": "source2",
+      "file": "BANK_3EA_INSTR_0000_SND_0000.wav",
+      "crc32": "ae73085e",
+      "state": "confident",
+      "transcript": "And there goes the battle!"
+    },
+    "blue_intro": {
+      "source": "source3",
+      "file": "vs blue.wav",
+      "crc32": "1f370903",
+      "state": "confident",
+      "transcript": "Viridian gym's Blue is the opponent. The challenger must stay focused to keep up with his expert Pokemon handling."
+    },
+    "blue_outro": {
+      "source": "source2",
+      "file": "BANK_3EA_INSTR_0000_SND_0000.wav",
+      "crc32": "ae73085e",
+      "state": "confident",
+      "transcript": "And there goes the battle!"
+    }
+  },
+  "confirmed_empty": []
+}
