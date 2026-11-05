@@ -48,6 +48,12 @@ const schema = {
         "lorelei", "bruno", "agatha", "lance", "champion",
         "falkner", "bugsy", "whitney", "morty", "chuck", "jasmine", "pryce", "clair",
         "will", "karen", "janine", "blue",
+        // Hoenn. Wallace leads Sootopolis in Ruby and Sapphire and is the
+        // Champion in Emerald, Juan leads Sootopolis in Emerald, and Steven
+        // is the Champion in Ruby and Sapphire.
+        "roxanne", "brawly", "wattson", "flannery", "norman", "winona",
+        "tate_and_liza", "juan", "wallace", "sidney", "phoebe", "glacia",
+        "drake", "steven",
       ],
       parts: [
         { id: "intro", moment: "The leader's challenge line as the battle starts", direction: "none", tone: "neutral", intensity: 3 },
