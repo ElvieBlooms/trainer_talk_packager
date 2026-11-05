@@ -1,0 +1,401 @@
+{
+  "recipe_format": 1,
+  "mod_id": "trainer_talk",
+  "schema_version": 1,
+  "pack_type": "trainer",
+  "label": "JAMES",
+  "folder": "james",
+  "author": "ElvieBlooms",
+  "created": "2026-10-20",
+  "sources": [
+    {
+      "id": "source1",
+      "label": "James (English)",
+      "file_name": "James (English).zip",
+      "zip_md5": "40130272515be68403bba7866565070b",
+      "clip_count": 80,
+      "picks": 47
+    }
+  ],
+  "slots": {
+    "new_game": {
+      "source": "source1",
+      "file": "ch0241_00_kojiro_0000_en.ogg",
+      "crc32": "4de60a2b",
+      "state": "confident",
+      "note": "Same audio as the JAMES pack's file.",
+      "transcript": "I'm James of Team Rocket. Surrender now or prepare to fight!"
+    },
+    "continue1": {
+      "source": "source1",
+      "file": "ch0241_00_kojiro_0074_en.ogg",
+      "crc32": "db543953",
+      "state": "confident",
+      "note": "Same audio as the JAMES pack's file.",
+      "transcript": "Team Rocket on the scene!"
+    },
+    "continue2": {
+      "source": "source1",
+      "file": "ch0241_00_kojiro_1004_en.ogg",
+      "crc32": "48594b96",
+      "state": "confident",
+      "note": "Same audio as the JAMES pack's file.",
+      "transcript": "James?"
+    },
+    "continue3": {
+      "source": "source1",
+      "file": "ch0241_00_kojiro_0071_en.ogg",
+      "crc32": "d17fc76e",
+      "state": "confident",
+      "note": "Same audio as the JAMES pack's file.",
+      "transcript": "Here we come!"
+    },
+    "continue4": {
+      "source": "source1",
+      "file": "ch0241_00_kojiro_0010_en.ogg",
+      "crc32": "405e2524",
+      "state": "confident",
+      "note": "Same audio as the JAMES pack's file.",
+      "transcript": "I'm baaaack! I'm here to unite all peoples! Well, you know the drill."
+    },
+    "continue5": {
+      "source": "source1",
+      "file": "ch0241_00_kojiro_0020_en.ogg",
+      "crc32": "5c9d9586",
+      "state": "confident",
+      "note": "Same audio as the JAMES pack's file.",
+      "transcript": "Make it double!"
+    },
+    "hit1": {
+      "source": "source1",
+      "file": "ch0241_00_kojiro_0014_en.ogg",
+      "crc32": "9e86fe1d",
+      "state": "confident",
+      "note": "Same audio as the JAMES pack's file.",
+      "transcript": "Get them!"
+    },
+    "hit2": {
+      "source": "source1",
+      "file": "ch0241_00_kojiro_0016_en.ogg",
+      "crc32": "a1138ff4",
+      "state": "confident",
+      "note": "Same audio as the JAMES pack's file.",
+      "transcript": "Oh, allow me!"
+    },
+    "hit3": {
+      "source": "source1",
+      "file": "ch0241_00_kojiro_0013_en.ogg",
+      "crc32": "8104b56b",
+      "state": "confident",
+      "note": "Same audio as the JAMES pack's file.",
+      "transcript": "Watch and learn!"
+    },
+    "status_enemy": {
+      "source": "source1",
+      "file": "ch0241_00_kojiro_0044_en.ogg",
+      "crc32": "09d79f7f",
+      "state": "confident",
+      "note": "Same audio as the JAMES pack's file.",
+      "transcript": "MY MY"
+    },
+    "status_enemy2": {
+      "source": "source1",
+      "file": "ch0241_00_kojiro_0039_en.ogg",
+      "crc32": "f1b386ce",
+      "state": "confident",
+      "note": "Same audio as the JAMES pack's file.",
+      "transcript": "Hahahaha!"
+    },
+    "status_player": {
+      "source": "source1",
+      "file": "ch0241_00_kojiro_0057_en.ogg",
+      "crc32": "741cc52d",
+      "state": "confident",
+      "note": "Same audio as the JAMES pack's file.",
+      "transcript": "Ugh."
+    },
+    "status_player2": {
+      "source": "source1",
+      "file": "ch0241_00_kojiro_0050_en.ogg",
+      "crc32": "c5d2d48a",
+      "state": "confident",
+      "note": "Same audio as the JAMES pack's file.",
+      "transcript": "Ugh, hmph!"
+    },
+    "hit_crit": {
+      "source": "source1",
+      "file": "ch0241_00_kojiro_0068_en.ogg",
+      "crc32": "7732dd81",
+      "state": "confident",
+      "note": "Same audio as the JAMES pack's file.",
+      "transcript": "Fantastic!"
+    },
+    "hit_crit2": {
+      "source": "source1",
+      "file": "ch0241_00_kojiro_0017_en.ogg",
+      "crc32": "e9113f5b",
+      "state": "confident",
+      "note": "Same audio as the JAMES pack's file.",
+      "transcript": "You're done for!"
+    },
+    "move_miss": {
+      "source": "source1",
+      "file": "ch0241_00_kojiro_0048_en.ogg",
+      "crc32": "acb7f452",
+      "state": "confident",
+      "note": "Same audio as the JAMES pack's file.",
+      "transcript": "The nerve!"
+    },
+    "move_miss2": {
+      "source": "source1",
+      "file": "ch0241_00_kojiro_0058_en.ogg",
+      "crc32": "c48cceeb",
+      "state": "confident",
+      "note": "Same audio as the JAMES pack's file.",
+      "transcript": "Drat!"
+    },
+    "catch_fail": {
+      "source": "source1",
+      "file": "ch0241_00_kojiro_0052_en.ogg",
+      "crc32": "4a55e7e4",
+      "state": "confident",
+      "note": "Same audio as the JAMES pack's file.",
+      "transcript": "Dreadful!"
+    },
+    "catch_fail2": {
+      "source": "source1",
+      "file": "ch0241_00_kojiro_0019_en.ogg",
+      "crc32": "b36c7a87",
+      "state": "confident",
+      "note": "Same audio as the JAMES pack's file.",
+      "transcript": "Oh no!"
+    },
+    "run_success": {
+      "source": "source1",
+      "file": "ch0241_00_kojiro_0011_en.ogg",
+      "crc32": "3a62493d",
+      "state": "confident",
+      "note": "Same audio as the JAMES pack's file.",
+      "transcript": "Wait for me! Don't leave me behind!"
+    },
+    "run_success2": {
+      "source": "source1",
+      "file": "ch0241_00_kojiro_0070_en.ogg",
+      "crc32": "db3c8ea1",
+      "state": "confident",
+      "note": "Same audio as the JAMES pack's file.",
+      "transcript": "Ta-ta!"
+    },
+    "run_fail": {
+      "source": "source1",
+      "file": "ch0241_00_kojiro_0054_en.ogg",
+      "crc32": "955e5fe5",
+      "state": "confident",
+      "note": "Same audio as the JAMES pack's file.",
+      "transcript": "Huh?"
+    },
+    "run_fail2": {
+      "source": "source1",
+      "file": "ch0241_00_kojiro_0055_en.ogg",
+      "crc32": "6a02491c",
+      "state": "confident",
+      "note": "Same audio as the JAMES pack's file.",
+      "transcript": "What?"
+    },
+    "faint_enemy": {
+      "source": "source1",
+      "file": "ch0241_00_kojiro_0043_en.ogg",
+      "crc32": "20044cad",
+      "state": "confident",
+      "note": "Same audio as the JAMES pack's file.",
+      "transcript": "Not bad!"
+    },
+    "faint_enemy2": {
+      "source": "source1",
+      "file": "ch0241_00_kojiro_0018_en.ogg",
+      "crc32": "90b3edb9",
+      "state": "confident",
+      "note": "Same audio as the JAMES pack's file.",
+      "transcript": "Love it!"
+    },
+    "faint_player": {
+      "source": "source1",
+      "file": "ch0241_00_kojiro_0051_en.ogg",
+      "crc32": "a07bd133",
+      "state": "confident",
+      "note": "Same audio as the JAMES pack's file.",
+      "transcript": "*Crying*"
+    },
+    "faint_player2": {
+      "source": "source1",
+      "file": "ch0241_00_kojiro_0053_en.ogg",
+      "crc32": "25044ef5",
+      "state": "confident",
+      "note": "Same audio as the JAMES pack's file.",
+      "transcript": "*Sad sigh*"
+    },
+    "evolved": {
+      "source": "source1",
+      "file": "ch0241_00_kojiro_0009_en.ogg",
+      "crc32": "e92bb50d",
+      "state": "confident",
+      "note": "Same audio as the JAMES pack's file.",
+      "transcript": "I didn't think you could get any more magnificent!"
+    },
+    "new_catch": {
+      "source": "source1",
+      "file": "ch0241_00_kojiro_0006_en.ogg",
+      "crc32": "3e217a1d",
+      "state": "confident",
+      "note": "Same audio as the JAMES pack's file.",
+      "transcript": "Excellent! We've really leveled up!"
+    },
+    "new_catch2": {
+      "source": "source1",
+      "file": "ch0241_00_kojiro_0023_en.ogg",
+      "crc32": "05c73b71",
+      "state": "confident",
+      "note": "Same audio as the JAMES pack's file.",
+      "transcript": "Behold!"
+    },
+    "blackout": {
+      "source": "source1",
+      "file": "ch0241_00_kojiro_0022_en.ogg",
+      "crc32": "eebb0166",
+      "state": "confident",
+      "note": "Same audio as the JAMES pack's file.",
+      "transcript": "Looks like Team Rocket's blasting off again!"
+    },
+    "blackout2": {
+      "source": "source1",
+      "file": "ch0241_00_kojiro_0062_en.ogg",
+      "crc32": "75849d92",
+      "state": "confident",
+      "note": "Same audio as the JAMES pack's file.",
+      "transcript": "Sorry!"
+    },
+    "battle_win": {
+      "source": "source1",
+      "file": "ch0241_00_kojiro_0021_en.ogg",
+      "crc32": "27347533",
+      "state": "confident",
+      "note": "Same audio as the JAMES pack's file.",
+      "transcript": "WE'LL BE UP FOR A PROMOTION IN NO TIME!"
+    },
+    "battle_win2": {
+      "source": "source1",
+      "file": "ch0241_00_kojiro_0012_en.ogg",
+      "crc32": "6984b9ee",
+      "state": "confident",
+      "note": "Same audio as the JAMES pack's file.",
+      "transcript": "Hohohoho! No one can stop us now! Not even the writers!"
+    },
+    "battle_loss": {
+      "source": "source1",
+      "file": "ch0241_00_kojiro_0028_en.ogg",
+      "crc32": "4e8014ae",
+      "state": "confident",
+      "note": "Same audio as the JAMES pack's file.",
+      "transcript": "I was so sure we'd win!"
+    },
+    "battle_loss2": {
+      "source": "source1",
+      "file": "ch0241_00_kojiro_0065_en.ogg",
+      "crc32": "b3a45829",
+      "state": "confident",
+      "note": "Same audio as the JAMES pack's file.",
+      "transcript": "BLEH"
+    },
+    "gym_enter": {
+      "source": "source1",
+      "file": "ch0241_00_kojiro_0015_en.ogg",
+      "crc32": "e3587686",
+      "state": "confident",
+      "note": "Same audio as the JAMES pack's file.",
+      "transcript": "We're coming for you!"
+    },
+    "gym_enter2": {
+      "source": "source1",
+      "file": "ch0241_00_kojiro_0072_en.ogg",
+      "crc32": "b9b67cbb",
+      "state": "confident",
+      "note": "Same audio as the JAMES pack's file.",
+      "transcript": "Put the plan into action!"
+    },
+    "gym_enter3": {
+      "source": "source1",
+      "file": "ch0241_00_kojiro_0027_en.ogg",
+      "crc32": "43b53036",
+      "state": "confident",
+      "note": "Same audio as the JAMES pack's file.",
+      "transcript": "Step aside!"
+    },
+    "e4_enter": {
+      "source": "source1",
+      "file": "ch0241_00_kojiro_0024_en.ogg",
+      "crc32": "0fb68dc1",
+      "state": "confident",
+      "note": "Same audio as the JAMES pack's file.",
+      "transcript": "Surrender!"
+    },
+    "e4_enter2": {
+      "source": "source1",
+      "file": "ch0241_00_kojiro_0073_en.ogg",
+      "crc32": "02fd87f7",
+      "state": "confident",
+      "note": "Same audio as the JAMES pack's file.",
+      "transcript": "Extend our reach to the stars above!"
+    },
+    "champion_enter": {
+      "source": "source1",
+      "file": "ch0241_00_kojiro_1005_en.ogg",
+      "crc32": "4dd9e7a1",
+      "state": "confident",
+      "note": "Same audio as the JAMES pack's file.",
+      "transcript": "Surrender now or prepare to fight!"
+    },
+    "champion_enter2": {
+      "source": "source1",
+      "file": "ch0241_00_kojiro_1002_en.ogg",
+      "crc32": "35026dea",
+      "state": "confident",
+      "note": "Same audio as the JAMES pack's file.",
+      "transcript": "To unite old peoples with it our nation!"
+    },
+    "night1": {
+      "source": "source1",
+      "file": "ch0241_00_kojiro_0031_en.ogg",
+      "crc32": "150efaae",
+      "state": "confident",
+      "note": "Same audio as the JAMES pack's file.",
+      "transcript": "Oh, who are you going out tonight? We were thinking of burning the midnight oil and making some new disguises."
+    },
+    "night2": {
+      "source": "source1",
+      "file": "ch0241_00_kojiro_0034_en.ogg",
+      "crc32": "705db511",
+      "state": "confident",
+      "note": "Same audio as the JAMES pack's file.",
+      "transcript": "Twerps like you should be in bed by now. What are you doing up? You're not. Up to no good, are you?"
+    },
+    "morning1": {
+      "source": "source1",
+      "file": "ch0241_00_kojiro_0029_en.ogg",
+      "crc32": "d3db0d07",
+      "state": "confident",
+      "note": "Same audio as the JAMES pack's file.",
+      "transcript": "That's the morning we're having, don't you think? Ah, days like these are just perfect for getting up to no good."
+    },
+    "morning2": {
+      "source": "source1",
+      "file": "ch0241_00_kojiro_0033_en.ogg",
+      "crc32": "9226c0e5",
+      "state": "confident",
+      "note": "Same audio as the JAMES pack's file.",
+      "transcript": "Anywhere, there's peace in the universe! Team Rocket will be there to make everything worse! Conscience, schmonscience!"
+    }
+  },
+  "confirmed_empty": [
+    "night3"
+  ]
+}

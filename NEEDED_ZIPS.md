@@ -221,6 +221,50 @@ Recipe by ElvieBlooms, 2026-10-03. Pack type: trainer.
 
 Recipe file: `recipes/trainer/ash/elvieblooms.json`
 
+## Zips needed for DAWN
+
+Recipe by ElvieBlooms, 2026-10-20. Pack type: trainer.
+48 slots filled from 4 zips.
+
+### Mobile - Pokemon Masters - Sinnoh Character Voices (English) - Dawn (English)
+- File: Mobile - Pokemon Masters - Sinnoh Character Voices (English) - Dawn (English).zip
+- Clips in the zip: 75
+- Used for 17 slots: new_game, continue2, hit3, status_enemy2, status_player2, run_success, evolved, new_catch, new_catch2, battle_win, battle_loss, gym_enter, gym_enter2, champion_enter, night1, night2, morning1
+- MD5: 2f4e81dd34799a49fcfd92465f6f1524 (a repackaged copy still works; clips are matched one by one)
+
+### Mobile - Pokemon Masters - Sinnoh Character Voices (English) - Dawn (Sygna Suit)
+- File: Mobile - Pokemon Masters - Sinnoh Character Voices (English) - Dawn (Sygna Suit) (English).zip
+- Clips in the zip: 71
+- Used for 13 slots: continue4, hit1, status_player, hit_crit, move_miss2, run_success2, faint_enemy2, faint_player, blackout, battle_loss2, e4_enter, champion_enter2, night3
+- MD5: d13b909107244c5d0c9770f54789ea1f (a repackaged copy still works; clips are matched one by one)
+
+### Mobile - Pokemon Masters - Sinnoh Character Voices (English) - Dawn (New Year) (
+- File: Mobile - Pokemon Masters - Sinnoh Character Voices (English) - Dawn (New Year) (English).zip
+- Clips in the zip: 71
+- Used for 12 slots: continue1, continue5, hit2, hit_crit2, move_miss, catch_fail, catch_fail2, run_fail2, faint_enemy, faint_player2, e4_enter2, morning2
+- MD5: a51c3b9fb349132b8d250b1836feba27 (a repackaged copy still works; clips are matched one by one)
+
+### Mobile - Pokemon Masters - Sinnoh Character Voices (English) - Dawn (Palentine) 
+- File: Mobile - Pokemon Masters - Sinnoh Character Voices (English) - Dawn (Palentine) (English).zip
+- Clips in the zip: 40
+- Used for 6 slots: continue3, status_enemy, run_fail, blackout2, battle_win2, gym_enter3
+- MD5: f14b862b3ab4d7888c31ddc1f9b9ba76 (a repackaged copy still works; clips are matched one by one)
+
+Recipe file: `recipes/trainer/dawn/elvieblooms.json`
+
+## Zips needed for JAMES
+
+Recipe by ElvieBlooms, 2026-10-20. Pack type: trainer.
+47 slots filled from 1 zip; 1 left silent.
+
+### James (English)
+- File: James (English).zip
+- Clips in the zip: 80
+- Used for 47 slots: new_game, continue1, continue2, continue3, continue4, continue5, hit1, hit2, hit3, status_enemy, status_enemy2, status_player, status_player2, hit_crit, hit_crit2, move_miss, move_miss2, catch_fail, catch_fail2, run_success, run_success2, run_fail, run_fail2, faint_enemy, faint_enemy2, faint_player, faint_player2, evolved, new_catch, new_catch2, blackout, blackout2, battle_win, battle_win2, battle_loss, battle_loss2, gym_enter, gym_enter2, gym_enter3, e4_enter, e4_enter2, champion_enter, champion_enter2, night1, night2, morning1, morning2
+- MD5: 40130272515be68403bba7866565070b (a repackaged copy still works; clips are matched one by one)
+
+Recipe file: `recipes/trainer/james/elvieblooms.json`
+
 ## Zips needed for JESSIE
 
 Recipe by ElvieBlooms, 2026-10-03. Pack type: trainer.

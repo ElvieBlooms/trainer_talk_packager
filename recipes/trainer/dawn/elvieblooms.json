@@ -1,0 +1,431 @@
+{
+  "recipe_format": 1,
+  "mod_id": "trainer_talk",
+  "schema_version": 1,
+  "pack_type": "trainer",
+  "label": "DAWN",
+  "folder": "dawn",
+  "author": "ElvieBlooms",
+  "created": "2026-10-20",
+  "sources": [
+    {
+      "id": "source1",
+      "label": "Mobile - Pokemon Masters - Sinnoh Character Voices (English) - Dawn (English)",
+      "file_name": "Mobile - Pokemon Masters - Sinnoh Character Voices (English) - Dawn (English).zip",
+      "zip_md5": "2f4e81dd34799a49fcfd92465f6f1524",
+      "clip_count": 75,
+      "picks": 17
+    },
+    {
+      "id": "source2",
+      "label": "Mobile - Pokemon Masters - Sinnoh Character Voices (English) - Dawn (New Year) (English)",
+      "file_name": "Mobile - Pokemon Masters - Sinnoh Character Voices (English) - Dawn (New Year) (English).zip",
+      "zip_md5": "a51c3b9fb349132b8d250b1836feba27",
+      "clip_count": 71,
+      "picks": 12
+    },
+    {
+      "id": "source3",
+      "label": "Mobile - Pokemon Masters - Sinnoh Character Voices (English) - Dawn (Palentine) (English)",
+      "file_name": "Mobile - Pokemon Masters - Sinnoh Character Voices (English) - Dawn (Palentine) (English).zip",
+      "zip_md5": "f14b862b3ab4d7888c31ddc1f9b9ba76",
+      "clip_count": 40,
+      "picks": 6
+    },
+    {
+      "id": "source4",
+      "label": "Mobile - Pokemon Masters - Sinnoh Character Voices (English) - Dawn (Sygna Suit) (English)",
+      "file_name": "Mobile - Pokemon Masters - Sinnoh Character Voices (English) - Dawn (Sygna Suit) (English).zip",
+      "zip_md5": "d13b909107244c5d0c9770f54789ea1f",
+      "clip_count": 71,
+      "picks": 13
+    }
+  ],
+  "slots": {
+    "new_game": {
+      "source": "source1",
+      "file": "ch0116_00_hikari_0000_en.ogg",
+      "crc32": "5078433a",
+      "state": "confident",
+      "note": "Same audio as the DAWN pack's file.",
+      "transcript": "Hi, I'm Dawn. I've got a bit more experience as a trainer than you, so I can teach you some things."
+    },
+    "continue1": {
+      "source": "source2",
+      "file": "ch0116_41_hikari_0010_en.ogg",
+      "crc32": "b88b1203",
+      "state": "confident",
+      "note": "Same audio as the DAWN pack's file.",
+      "transcript": "Oh, we meet again! Let's live each day to the fullest and treasure every encounter!"
+    },
+    "continue2": {
+      "source": "source1",
+      "file": "ch0116_00_hikari_0011_en.ogg",
+      "crc32": "1e0b4d94",
+      "state": "confident",
+      "note": "Same audio as the DAWN pack's file.",
+      "transcript": "Woohoo! Ready to go!"
+    },
+    "continue3": {
+      "source": "source3",
+      "file": "ch0116_40_hikari_0011_en.ogg",
+      "crc32": "7054da11",
+      "state": "confident",
+      "note": "Same audio as the DAWN pack's file.",
+      "transcript": "Take me with you! I'm sure you'll want your mentor on your team!"
+    },
+    "continue4": {
+      "source": "source4",
+      "file": "ch0116_10_hikari_0011_en.ogg",
+      "crc32": "b14a1e11",
+      "state": "confident",
+      "note": "Same audio as the DAWN pack's file.",
+      "transcript": "Let's get out there and make some dreams come true!"
+    },
+    "continue5": {
+      "source": "source2",
+      "file": "ch0116_41_hikari_0072_en.ogg",
+      "crc32": "61e0481d",
+      "state": "confident",
+      "note": "Same audio as the DAWN pack's file.",
+      "transcript": "Ready when you are!"
+    },
+    "hit1": {
+      "source": "source4",
+      "file": "ch0116_10_hikari_0015_en.ogg",
+      "crc32": "31a4ebb8",
+      "state": "confident",
+      "note": "Same audio as the DAWN pack's file.",
+      "transcript": "Take this!"
+    },
+    "hit2": {
+      "source": "source2",
+      "file": "ch0116_41_hikari_0015_en.ogg",
+      "crc32": "ce7019f2",
+      "state": "confident",
+      "note": "Same audio as the DAWN pack's file.",
+      "transcript": "Right there!"
+    },
+    "hit3": {
+      "source": "source1",
+      "file": "ch0116_00_hikari_0014_en.ogg",
+      "crc32": "c28a71cb",
+      "state": "confident",
+      "note": "Same audio as the DAWN pack's file.",
+      "transcript": "Ha!"
+    },
+    "status_enemy": {
+      "source": "source3",
+      "file": "ch0116_40_hikari_0017_en.ogg",
+      "crc32": "7eaefd39",
+      "state": "confident",
+      "note": "Same audio as the DAWN pack's file.",
+      "transcript": "Got it!"
+    },
+    "status_enemy2": {
+      "source": "source1",
+      "file": "ch0116_00_hikari_0039_en.ogg",
+      "crc32": "11090dde",
+      "state": "confident",
+      "note": "Same audio as the DAWN pack's file.",
+      "transcript": "HAHAHA"
+    },
+    "status_player": {
+      "source": "source4",
+      "file": "ch0116_10_hikari_0051_en.ogg",
+      "crc32": "a45939ca",
+      "state": "confident",
+      "note": "Same audio as the DAWN pack's file.",
+      "transcript": "Aaaahhh!"
+    },
+    "status_player2": {
+      "source": "source1",
+      "file": "ch0116_00_hikari_0052_en.ogg",
+      "crc32": "c6a41771",
+      "state": "confident",
+      "note": "Same audio as the DAWN pack's file.",
+      "transcript": "Oh no!"
+    },
+    "hit_crit": {
+      "source": "source4",
+      "file": "ch0116_10_hikari_0068_en.ogg",
+      "crc32": "5f9f06e6",
+      "state": "confident",
+      "note": "Same audio as the DAWN pack's file.",
+      "transcript": "Incredible!"
+    },
+    "hit_crit2": {
+      "source": "source2",
+      "file": "ch0116_41_hikari_0018_en.ogg",
+      "crc32": "a7dee74b",
+      "state": "confident",
+      "note": "Same audio as the DAWN pack's file.",
+      "transcript": "Nice!"
+    },
+    "move_miss": {
+      "source": "source2",
+      "file": "ch0116_41_hikari_0022_en.ogg",
+      "crc32": "7c5849d8",
+      "state": "confident",
+      "note": "Same audio as the DAWN pack's file.",
+      "transcript": "So frustrating!"
+    },
+    "move_miss2": {
+      "source": "source4",
+      "file": "ch0116_10_hikari_0041_en.ogg",
+      "crc32": "7b227ccb",
+      "state": "confident",
+      "note": "Same audio as the DAWN pack's file.",
+      "transcript": "HUH"
+    },
+    "catch_fail": {
+      "source": "source2",
+      "file": "ch0116_41_hikari_0052_en.ogg",
+      "crc32": "84a0f137",
+      "state": "confident",
+      "note": "Same audio as the DAWN pack's file.",
+      "transcript": "But why?"
+    },
+    "catch_fail2": {
+      "source": "source2",
+      "file": "ch0116_41_hikari_0066_en.ogg",
+      "crc32": "48b9c28e",
+      "state": "confident",
+      "note": "Same audio as the DAWN pack's file.",
+      "transcript": "Please?"
+    },
+    "run_success": {
+      "source": "source1",
+      "file": "ch0116_00_hikari_0070_en.ogg",
+      "crc32": "11deebc0",
+      "state": "confident",
+      "note": "Same audio as the DAWN pack's file.",
+      "transcript": "Catch you later!"
+    },
+    "run_success2": {
+      "source": "source4",
+      "file": "ch0116_10_hikari_0070_en.ogg",
+      "crc32": "e64eca65",
+      "state": "confident",
+      "note": "Same audio as the DAWN pack's file.",
+      "transcript": "See you later!"
+    },
+    "run_fail": {
+      "source": "source3",
+      "file": "ch0116_40_hikari_0022_en.ogg",
+      "crc32": "04390b8e",
+      "state": "confident",
+      "note": "Same audio as the DAWN pack's file.",
+      "transcript": "No way!"
+    },
+    "run_fail2": {
+      "source": "source2",
+      "file": "ch0116_41_hikari_0065_en.ogg",
+      "crc32": "164f701d",
+      "state": "confident",
+      "note": "Same audio as the DAWN pack's file.",
+      "transcript": "Help!"
+    },
+    "faint_enemy": {
+      "source": "source2",
+      "file": "ch0116_41_hikari_0021_en.ogg",
+      "crc32": "c437c0a1",
+      "state": "confident",
+      "note": "Same audio as the DAWN pack's file.",
+      "transcript": "Extremely well done!"
+    },
+    "faint_enemy2": {
+      "source": "source4",
+      "file": "ch0116_10_hikari_0013_en.ogg",
+      "crc32": "37ea5736",
+      "state": "confident",
+      "note": "Same audio as the DAWN pack's file.",
+      "transcript": "We're gonna win this!"
+    },
+    "faint_player": {
+      "source": "source4",
+      "file": "ch0116_10_hikari_0022_en.ogg",
+      "crc32": "d8a55311",
+      "state": "confident",
+      "note": "Same audio as the DAWN pack's file.",
+      "transcript": "No way!"
+    },
+    "faint_player2": {
+      "source": "source2",
+      "file": "ch0116_41_hikari_0062_en.ogg",
+      "crc32": "0bf2a070",
+      "state": "confident",
+      "note": "Same audio as the DAWN pack's file.",
+      "transcript": "I'm sorry."
+    },
+    "evolved": {
+      "source": "source1",
+      "file": "ch0116_00_hikari_0009_en.ogg",
+      "crc32": "b721d79e",
+      "state": "confident",
+      "note": "Same audio as the DAWN pack's file.",
+      "transcript": "Oh my gosh, you evolved! You're the best partner ever!"
+    },
+    "new_catch": {
+      "source": "source1",
+      "file": "ch0116_00_hikari_0018_en.ogg",
+      "crc32": "32ca7f42",
+      "state": "confident",
+      "note": "Same audio as the DAWN pack's file.",
+      "transcript": "AWESOME!"
+    },
+    "new_catch2": {
+      "source": "source1",
+      "file": "ch0116_00_hikari_0044_en.ogg",
+      "crc32": "dc822a8d",
+      "state": "confident",
+      "note": "Same audio as the DAWN pack's file.",
+      "transcript": "How awesome!"
+    },
+    "blackout": {
+      "source": "source4",
+      "file": "ch0116_10_hikari_0028_en.ogg",
+      "crc32": "fbf1b087",
+      "state": "confident",
+      "note": "Same audio as the DAWN pack's file.",
+      "transcript": "Our hopes are shattered."
+    },
+    "blackout2": {
+      "source": "source3",
+      "file": "ch0116_40_hikari_0028_en.ogg",
+      "crc32": "3b687ae8",
+      "state": "confident",
+      "note": "Same audio as the DAWN pack's file.",
+      "transcript": "Wait, lost?"
+    },
+    "battle_win": {
+      "source": "source1",
+      "file": "ch0116_00_hikari_0007_en.ogg",
+      "crc32": "ad23410e",
+      "state": "confident",
+      "note": "Same audio as the DAWN pack's file.",
+      "transcript": "Haha! We're at the top of our game!"
+    },
+    "battle_win2": {
+      "source": "source3",
+      "file": "ch0116_40_hikari_0021_en.ogg",
+      "crc32": "fc36a053",
+      "state": "confident",
+      "note": "Same audio as the DAWN pack's file.",
+      "transcript": "We followed the recipe for victory!"
+    },
+    "battle_loss": {
+      "source": "source1",
+      "file": "ch0116_00_hikari_0048_en.ogg",
+      "crc32": "37ed1c9a",
+      "state": "confident",
+      "note": "Same audio as the DAWN pack's file.",
+      "transcript": "WHAT?!"
+    },
+    "battle_loss2": {
+      "source": "source4",
+      "file": "ch0116_10_hikari_0062_en.ogg",
+      "crc32": "b0a2129b",
+      "state": "confident",
+      "note": "Same audio as the DAWN pack's file.",
+      "transcript": "Sorry..."
+    },
+    "gym_enter": {
+      "source": "source1",
+      "file": "ch0116_00_hikari_0008_en.ogg",
+      "crc32": "45d76c24",
+      "state": "confident",
+      "note": "Same audio as the DAWN pack's file.",
+      "transcript": "Woah! This is gonna be awesome!"
+    },
+    "gym_enter2": {
+      "source": "source1",
+      "file": "ch0116_00_hikari_0013_en.ogg",
+      "crc32": "98732787",
+      "state": "confident",
+      "note": "Same audio as the DAWN pack's file.",
+      "transcript": "Let's battle!"
+    },
+    "gym_enter3": {
+      "source": "source3",
+      "file": "ch0116_40_hikari_0072_en.ogg",
+      "crc32": "00edae24",
+      "state": "confident",
+      "note": "Same audio as the DAWN pack's file.",
+      "transcript": "Get ready!"
+    },
+    "e4_enter": {
+      "source": "source4",
+      "file": "ch0116_10_hikari_0012_en.ogg",
+      "crc32": "347480c1",
+      "state": "confident",
+      "note": "Same audio as the DAWN pack's file.",
+      "transcript": "We won't lose to anyone!"
+    },
+    "e4_enter2": {
+      "source": "source2",
+      "file": "ch0116_41_hikari_0017_en.ogg",
+      "crc32": "73e1c903",
+      "state": "confident",
+      "note": "Same audio as the DAWN pack's file.",
+      "transcript": "I won't lose!"
+    },
+    "champion_enter": {
+      "source": "source1",
+      "file": "ch0116_00_hikari_0074_en.ogg",
+      "crc32": "ae6104b0",
+      "state": "confident",
+      "note": "Same audio as the DAWN pack's file.",
+      "transcript": "United like this, our dream team has no chance of losing!"
+    },
+    "champion_enter2": {
+      "source": "source4",
+      "file": "ch0116_10_hikari_0074_en.ogg",
+      "crc32": "4f0c0d68",
+      "state": "confident",
+      "note": "Same audio as the DAWN pack's file.",
+      "transcript": "Never fear! The dream team is here!"
+    },
+    "night1": {
+      "source": "source1",
+      "file": "ch0116_00_hikari_0031_en.ogg",
+      "crc32": "a0f79a66",
+      "state": "confident",
+      "note": "Same audio as the DAWN pack's file.",
+      "transcript": "I know it's not good to stay up late at night, but it's just so exciting to have adventures in the dark!"
+    },
+    "night2": {
+      "source": "source1",
+      "file": "ch0116_00_hikari_0034_en.ogg",
+      "crc32": "c9df350a",
+      "state": "confident",
+      "note": "Same audio as the DAWN pack's file.",
+      "transcript": "I love taking walks in the moonlight. It's not scary as long as I have my Pokémon with me."
+    },
+    "night3": {
+      "source": "source4",
+      "file": "ch0116_10_hikari_0031_en.ogg",
+      "crc32": "11cc12a1",
+      "state": "confident",
+      "note": "Same audio as the DAWN pack's file.",
+      "transcript": "If you're ever having a nightmare, I'll come save you, even in your dreams!"
+    },
+    "morning1": {
+      "source": "source1",
+      "file": "ch0116_00_hikari_0029_en.ogg",
+      "crc32": "3caeddb7",
+      "state": "confident",
+      "note": "Same audio as the DAWN pack's file.",
+      "transcript": "Hey there! Starting an adventure first thing in the morning, huh? You sure you have everything you need?"
+    },
+    "morning2": {
+      "source": "source2",
+      "file": "ch0116_41_hikari_0029_en.ogg",
+      "crc32": "6028f8bf",
+      "state": "confident",
+      "note": "Same audio as the DAWN pack's file.",
+      "transcript": "Did you see the sunrise this morning? I swear it was shining and sparkling more than ever!"
+    }
+  },
+  "confirmed_empty": []
+}
