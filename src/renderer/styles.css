@@ -291,3 +291,27 @@ dialog .note-field select { width: auto; min-width: 220px; }
 .needed li { margin: 2px 0; }
 .other-recipes { margin: 8px 0 12px; }
 .other-recipes summary { cursor: pointer; color: var(--muted); }
+
+/* Pikachu cries screen */
+#cries-view { padding: 12px 16px; display: flex; flex-direction: column; gap: 10px; min-height: 0; flex: 1; overflow: hidden; }
+#cries-view[hidden] { display: none; }
+.cries-bar { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
+.cries-bar .spacer { flex: 1; }
+.cries-body { display: grid; grid-template-columns: 240px 1fr; gap: 12px; min-height: 0; flex: 1; }
+.cries-slots { display: flex; flex-direction: column; gap: 4px; overflow: auto; padding-right: 4px; }
+.cries-slot { display: grid; grid-template-columns: 28px 1fr; gap: 0 6px; text-align: left; padding: 5px 8px; border: 1px solid var(--line); background: var(--panel); color: var(--ink); border-radius: 6px; cursor: pointer; }
+.cries-slot span:last-child { grid-column: 2; }
+.cries-slot.sel { border-color: var(--accent); background: var(--select); color: #1d2330; }
+.cries-slot.done b::after { content: " ✓"; color: var(--confident); }
+.cries-slot.keep b::after { content: " ↺"; color: var(--stretch); }
+.cries-pane { overflow: auto; display: flex; flex-direction: column; gap: 8px; min-width: 0; }
+.cries-row { display: flex; gap: 8px; align-items: center; padding: 4px 6px; border: 1px solid var(--line-soft); border-radius: 6px; background: var(--panel); }
+.cries-row.yellow { padding: 8px; }
+.cries-row.chosen { border-color: var(--confident); }
+.cries-name { flex: 1; min-width: 120px; }
+.cries-filters { display: flex; gap: 12px; align-items: center; flex-wrap: wrap; }
+.cries-list { display: flex; flex-direction: column; gap: 4px; }
+.wave { width: 220px; height: 34px; flex: none; }
+.tag { margin-left: 6px; padding: 0 5px; border: 1px solid var(--line); border-radius: 8px; font-size: 11px; color: var(--muted); }
+.mono { font-family: var(--mono); }
+.steps[hidden] { display: none; }

@@ -134,3 +134,7 @@ npm start
 ## Licenses
 
 Trainer Talk Packager is released under the [MIT License](LICENSE). See [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md) for the libraries and models it uses.
+
+## Pikachu cries (anime_pikachu mod)
+
+The **Pikachu cries** button in the top bar opens a separate screen for picking replacement Pikachu cries for the `anime_pikachu` mod. Add the Yellow originals zip and the Let's Go and Sword/Shield Pikachu zips you ripped yourself. For each of the 42 slots you can play the Yellow original, then every candidate (sorted by closest waveform or closest length), A/B them, and choose one or "Keep original". Export writes trimmed `assets/cries/cry_NN.ogg` files (silence trimmed 40 dB below peak, 30 ms kept, 10 ms fade-out) and `PICKS.md`, either to a folder or as a copy of the mod zip. Picks save as a small recipe file with clip names only; no audio is stored or exported to a recipe, and the app ships no Nintendo audio.

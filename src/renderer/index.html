@@ -18,10 +18,12 @@
       <button class="step" data-view="review">2 Review</button>
       <button class="step" data-view="export">3 Export</button>
     </nav>
+    <button class="btn subtle small" id="cries-open" title="Pick replacement Pikachu cries for the anime_pikachu mod">Pikachu cries</button>
     <button class="btn subtle small" id="activity-toggle" aria-expanded="false" aria-controls="activity">Activity</button>
     <button class="linkish" id="repo-link" title="Open the Trainer Talk repository">Trainer Talk on GitHub</button>
   </header>
   <main id="view" tabindex="-1"></main>
+  <main id="cries-view" hidden></main>
   <section id="activity" hidden aria-label="Activity">
     <div class="activity-head">
       <b>Activity</b>
@@ -40,6 +42,8 @@
   <script src="ui.js"></script>
   <script src="features.js"></script>
   <script src="app.js"></script>
+  <script src="cries.js"></script>
+  <script src="cries-ui.js"></script>
   <script src="activity.js"></script>
 </body>
 </html>

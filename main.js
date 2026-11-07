@@ -13,6 +13,8 @@ const { splitSuggestions, assignFromSuggestions } = require("./src/core/assign")
 const { matchPack } = require("./src/core/packmatch");
 const AdmZip = require("adm-zip");
 const { crcHex } = require("./src/core/zips");
+const cries = require("./src/core/cries");
+const { wavToOgg } = require("./src/core/audio");
 
 const REPO_URL = "https://github.com/ElvieBlooms/Trainer_Talk";
 const SESSION_FORMAT = 1;
@@ -343,6 +345,128 @@ handle("export:write", async (state, formats) => {
   });
   log(`exported ${written.map((f) => path.basename(f)).join(", ")}${plan.converted ? ` (${plan.converted} WAV clips converted to Ogg Vorbis)` : ""}`);
   return written;
+});
+
+// ---- Pikachu cries (anime_pikachu mod): a separate screen ----
+// Audio zips for this screen live apart from the voice-pack sources and are
+// never written to a recipe; only clip names and picks are saved.
+
+const criesSets = new Map();   // zip path -> { id, zip, clips }
+let criesNext = 1;
+const criesSlotData = () => JSON.parse(fs.readFileSync(path.join(__dirname, "schemas", "anime_pikachu.cries.json"), "utf8"));
+const criesStateFile = () => path.join(app.getPath("userData"), "cries-state.json");
+
+handle("cries:info", () => criesSlotData());
+
+handle("cries:addZips", async () => {
+  const r = await dialog.showOpenDialog(win, {
+    title: "Add the Pikachu audio zips (Yellow originals, Let's Go, Sword/Shield)",
+    filters: [{ name: "Zip files", extensions: ["zip"] }],
+    properties: ["openFile", "multiSelections"],
+  });
+  if (r.canceled) return { clips: [], errors: [] };
+  const errors = [];
+  for (const f of r.filePaths) {
+    if (criesSets.has(f)) continue;
+    try {
+      const id = `c${criesNext++}`;
+      const zip = new AdmZip(f);
+      const clips = [];
+      for (const e of zip.getEntries()) {
+        if (e.isDirectory || e.entryName.startsWith("__MACOSX/")) continue;
+        const info = cries.classify(e.entryName);
+        if (info) clips.push({ key: `${id}::${e.entryName}`, ...info, name: path.posix.basename(e.entryName) });
+      }
+      if (!clips.length) { errors.push(`${path.basename(f)} has no Yellow, Let's Go or Sword/Shield Pikachu clips I recognise.`); continue; }
+      criesSets.set(f, { id, zip, clips });
+    } catch (e) { errors.push(`${path.basename(f)}: ${e.message}`); }
+  }
+  const seen = new Set();
+  const clips = [];
+  for (const s of criesSets.values()) for (const c of s.clips) {
+    const k = c.set + ":" + c.id;
+    if (!seen.has(k)) { seen.add(k); clips.push(c); }
+  }
+  return { clips, errors };
+});
+
+handle("cries:bytes", (key) => {
+  const sid = key.split("::")[0];
+  for (const s of criesSets.values()) {
+    if (s.id !== sid) continue;
+    const entry = s.zip.getEntry(key.slice(sid.length + 2));
+    if (entry) return entry.getData();
+  }
+  throw new Error("That clip's zip is no longer loaded.");
+});
+
+handle("cries:loadState", () => {
+  try { return JSON.parse(fs.readFileSync(criesStateFile(), "utf8")); } catch (_) { return null; }
+});
+handle("cries:saveState", (state) => { fs.writeFileSync(criesStateFile(), JSON.stringify(state)); return true; });
+
+handle("cries:saveRecipe", async (recipe) => {
+  const r = await dialog.showSaveDialog(win, {
+    title: "Save picks", defaultPath: "anime_pikachu_picks.recipe.json",
+    filters: [{ name: "Recipe", extensions: ["json"] }],
+  });
+  if (r.canceled || !r.filePath) return null;
+  fs.writeFileSync(r.filePath, JSON.stringify(recipe, null, 2));
+  return r.filePath;
+});
+handle("cries:loadRecipe", async () => {
+  const r = await dialog.showOpenDialog(win, {
+    title: "Load picks", filters: [{ name: "Recipe", extensions: ["json"] }], properties: ["openFile"],
+  });
+  if (r.canceled || !r.filePaths[0]) return null;
+  const st = fs.statSync(r.filePaths[0]);
+  if (st.size > 1024 * 1024) throw new Error("That file is too big to be a picks recipe.");
+  const rec = JSON.parse(fs.readFileSync(r.filePaths[0], "utf8"));
+  if (!rec || rec.kind !== "anime_pikachu_cries" || typeof rec.picks !== "object") throw new Error("That isn't an anime_pikachu picks recipe.");
+  return rec;
+});
+
+// files: [{ slot: "cry_04", channels: [Float32Array...], rate }]; keeps: slots
+// that use the Yellow original. Writes a folder, or a copy of the mod zip.
+handle("cries:export", async ({ files, picks, intoMod }) => {
+  const data = criesSlotData();
+  if (!Array.isArray(files) || files.length > 42) throw new Error("Bad export.");
+  const valid = new Set(data.slots.map((s) => s.id));
+  const out = [];
+  for (const f of files) {
+    if (!valid.has(f.slot) || !f.channels || !f.channels.length) throw new Error("Bad export entry.");
+    const chans = f.channels.map((c) => new Float32Array(c));
+    out.push({ slot: f.slot, ogg: await wavToOgg(cries.toWav(chans, f.rate)) });
+  }
+  const md = cries.picksMarkdown(data.slots, picks || {}, { version: app.getVersion() });
+  if (intoMod) {
+    const r = await dialog.showOpenDialog(win, {
+      title: "Choose the anime_pikachu mod zip (a new copy is saved next to it)",
+      filters: [{ name: "Zip files", extensions: ["zip"] }], properties: ["openFile"],
+    });
+    if (r.canceled || !r.filePaths[0]) return null;
+    const zip = new AdmZip(r.filePaths[0]);
+    const man = zip.getEntries().find((e) => /(^|\/)manifest\.json$/.test(e.entryName) && !e.entryName.startsWith("__MACOSX"));
+    if (!man) throw new Error("No manifest.json in that zip.");
+    const root = man.entryName.slice(0, man.entryName.length - "manifest.json".length);
+    for (const e of zip.getEntries()) if (e.entryName.startsWith(root + data.root + "/")) zip.deleteFile(e.entryName);
+    for (const o of out) zip.addFile(`${root}${data.root}/${o.slot}.ogg`, o.ogg);
+    const picksEntry = zip.getEntries().find((e) => e.entryName === root + "PICKS.md");
+    if (picksEntry) zip.deleteFile(picksEntry.entryName);
+    zip.addFile(root + "PICKS.md", Buffer.from(md));
+    const dest = r.filePaths[0].replace(/\.zip$/i, "") + "-picks.zip";
+    zip.writeZip(dest);
+    log(`wrote ${path.basename(dest)} with ${out.length} cries`);
+    return { path: dest, count: out.length };
+  }
+  const r = await dialog.showOpenDialog(win, { title: "Choose where to save", properties: ["openDirectory", "createDirectory"] });
+  if (r.canceled || !r.filePaths[0]) return null;
+  const dir = path.join(r.filePaths[0], ...data.root.split("/"));
+  fs.mkdirSync(dir, { recursive: true });
+  for (const o of out) fs.writeFileSync(path.join(dir, `${o.slot}.ogg`), o.ogg);
+  fs.writeFileSync(path.join(r.filePaths[0], "PICKS.md"), md);
+  log(`wrote ${out.length} cries to ${dir}`);
+  return { path: dir, count: out.length };
 });
 
 handle("export:reveal", (file) => shell.showItemInFolder(file));

@@ -1,0 +1,353 @@
+{
+ "schema_version": 1,
+ "mod_id": "anime_pikachu",
+ "root": "assets/cries",
+ "start_here": [
+  4,
+  6,
+  10,
+  11,
+  20,
+  29,
+  31,
+  40
+ ],
+ "slots": [
+  {
+   "id": "cry_01",
+   "n": 1,
+   "played": true,
+   "where": "Title screen: Pikachu pops up; Every generic Pikachu cry: battle send-out, Pok\u00e9dex, refusing a Thunder Stone; Talk: friendship 161-200, neutral mood",
+   "yellow_seconds": 0.84,
+   "tier": "Possible"
+  },
+  {
+   "id": "cry_02",
+   "n": 2,
+   "played": true,
+   "where": "Oak's Lab: Pikachu refuses the Pok\u00e9 Ball",
+   "yellow_seconds": 0.63,
+   "tier": "Possible"
+  },
+  {
+   "id": "cry_03",
+   "n": 3,
+   "played": true,
+   "where": "Talk: friendship 101-130, neutral mood",
+   "yellow_seconds": 0.93,
+   "tier": "Possible"
+  },
+  {
+   "id": "cry_04",
+   "n": 4,
+   "played": true,
+   "where": "Battle: any Pikachu fainting; Talk: inside Pok\u00e9mon Tower",
+   "yellow_seconds": 1.48,
+   "tier": "Weak"
+  },
+  {
+   "id": "cry_05",
+   "n": 5,
+   "played": true,
+   "where": "Talk: friendship 201+, good mood (heart); Pok\u00e9mon Fan Club scenes",
+   "yellow_seconds": 1.51,
+   "tier": "Possible"
+  },
+  {
+   "id": "cry_06",
+   "n": 6,
+   "played": true,
+   "where": "Talk: friendship 51-100, bad mood (skull)",
+   "yellow_seconds": 1.68,
+   "tier": "None"
+  },
+  {
+   "id": "cry_07",
+   "n": 7,
+   "played": false,
+   "where": "",
+   "yellow_seconds": 1.27,
+   "tier": "Possible"
+  },
+  {
+   "id": "cry_08",
+   "n": 8,
+   "played": false,
+   "where": "",
+   "yellow_seconds": 1.56,
+   "tier": "Possible"
+  },
+  {
+   "id": "cry_09",
+   "n": 9,
+   "played": true,
+   "where": "Bill's House: Bill steps out of the machine (!)",
+   "yellow_seconds": 1.23,
+   "tier": "Strong"
+  },
+  {
+   "id": "cry_10",
+   "n": 10,
+   "played": true,
+   "where": "Talk: friendship 0-50, bad mood (angry bolt)",
+   "yellow_seconds": 2.97,
+   "tier": "Weak"
+  },
+  {
+   "id": "cry_11",
+   "n": 11,
+   "played": true,
+   "where": "Title screen: pressing Start/A to leave",
+   "yellow_seconds": 0.66,
+   "tier": "None"
+  },
+  {
+   "id": "cry_12",
+   "n": 12,
+   "played": false,
+   "where": "",
+   "yellow_seconds": 1.25,
+   "tier": "Possible"
+  },
+  {
+   "id": "cry_13",
+   "n": 13,
+   "played": true,
+   "where": "Talk: friendship 161+, bad mood",
+   "yellow_seconds": 1.81,
+   "tier": "Possible"
+  },
+  {
+   "id": "cry_14",
+   "n": 14,
+   "played": false,
+   "where": "",
+   "yellow_seconds": 2.28,
+   "tier": "Possible"
+  },
+  {
+   "id": "cry_15",
+   "n": 15,
+   "played": true,
+   "where": "Talk: Pikachu has a status problem (poison, burn, etc.)",
+   "yellow_seconds": 1.9,
+   "tier": "Strong"
+  },
+  {
+   "id": "cry_16",
+   "n": 16,
+   "played": false,
+   "where": "",
+   "yellow_seconds": 1.91,
+   "tier": "Possible"
+  },
+  {
+   "id": "cry_17",
+   "n": 17,
+   "played": false,
+   "where": "",
+   "yellow_seconds": 0.78,
+   "tier": "Possible"
+  },
+  {
+   "id": "cry_18",
+   "n": 18,
+   "played": true,
+   "where": "Talk: right after you catch a Pok\u00e9mon",
+   "yellow_seconds": 1.4,
+   "tier": "Possible"
+  },
+  {
+   "id": "cry_19",
+   "n": 19,
+   "played": true,
+   "where": "Bill's House: Bill-as-a-Pok\u00e9mon confusion (?); Bill's House: talking to Pikachu after meeting human Bill",
+   "yellow_seconds": 2.06,
+   "tier": "Possible"
+  },
+  {
+   "id": "cry_20",
+   "n": 20,
+   "played": true,
+   "where": "Talk: right after fishing",
+   "yellow_seconds": 2.97,
+   "tier": "Weak"
+  },
+  {
+   "id": "cry_21",
+   "n": 21,
+   "played": false,
+   "where": "",
+   "yellow_seconds": 2.97,
+   "tier": "Weak"
+  },
+  {
+   "id": "cry_22",
+   "n": 22,
+   "played": false,
+   "where": "",
+   "yellow_seconds": 2.33,
+   "tier": "None"
+  },
+  {
+   "id": "cry_23",
+   "n": 23,
+   "played": false,
+   "where": "",
+   "yellow_seconds": 1.38,
+   "tier": "Possible"
+  },
+  {
+   "id": "cry_24",
+   "n": 24,
+   "played": false,
+   "where": "",
+   "yellow_seconds": 2.61,
+   "tier": "Weak"
+  },
+  {
+   "id": "cry_25",
+   "n": 25,
+   "played": true,
+   "where": "Talk: friendship 51-100, good mood",
+   "yellow_seconds": 1.32,
+   "tier": "Possible"
+  },
+  {
+   "id": "cry_26",
+   "n": 26,
+   "played": true,
+   "where": "Bill's House: talking to Pikachu before meeting human Bill, and a scripted walk",
+   "yellow_seconds": 1.26,
+   "tier": "Possible"
+  },
+  {
+   "id": "cry_27",
+   "n": 27,
+   "played": false,
+   "where": "",
+   "yellow_seconds": 1.05,
+   "tier": "Possible"
+  },
+  {
+   "id": "cry_28",
+   "n": 28,
+   "played": true,
+   "where": "Day-Care: leaving Pikachu there; Surfing minigame: finished, no new high score",
+   "yellow_seconds": 1.7,
+   "tier": "Possible"
+  },
+  {
+   "id": "cry_29",
+   "n": 29,
+   "played": true,
+   "where": "Talk: friendship 131-160, neutral mood",
+   "yellow_seconds": 1.13,
+   "tier": "Weak"
+  },
+  {
+   "id": "cry_30",
+   "n": 30,
+   "played": false,
+   "where": "",
+   "yellow_seconds": 0.44,
+   "tier": "None"
+  },
+  {
+   "id": "cry_31",
+   "n": 31,
+   "played": true,
+   "where": "Talk: friendship 51-100, neutral mood",
+   "yellow_seconds": 0.7,
+   "tier": "Weak"
+  },
+  {
+   "id": "cry_32",
+   "n": 32,
+   "played": false,
+   "where": "",
+   "yellow_seconds": 0.51,
+   "tier": "Possible"
+  },
+  {
+   "id": "cry_33",
+   "n": 33,
+   "played": true,
+   "where": "Talk: friendship 201-250, neutral mood; Talk: friendship 251+, neutral mood (heart)",
+   "yellow_seconds": 1.18,
+   "tier": "Possible"
+  },
+  {
+   "id": "cry_34",
+   "n": 34,
+   "played": true,
+   "where": "Talk: friendship 131-160, good mood; Surfing minigame: new high score",
+   "yellow_seconds": 1.95,
+   "tier": "Possible"
+  },
+  {
+   "id": "cry_35",
+   "n": 35,
+   "played": true,
+   "where": "Talk: friendship 161-200, good mood (smile); Talk: just learned Thunderbolt/Thunder (bolt); Day-Care: getting Pikachu back",
+   "yellow_seconds": 1.69,
+   "tier": "Possible"
+  },
+  {
+   "id": "cry_36",
+   "n": 36,
+   "played": false,
+   "where": "",
+   "yellow_seconds": 2.59,
+   "tier": "Possible"
+  },
+  {
+   "id": "cry_37",
+   "n": 37,
+   "played": true,
+   "where": "Talk: Pikachu is asleep (Zzz); Pewter Pok\u00e9mon Center: sleeping scene",
+   "yellow_seconds": 1.3,
+   "tier": "Possible"
+  },
+  {
+   "id": "cry_38",
+   "n": 38,
+   "played": true,
+   "where": "Talk: friendship 0-50, neutral mood (skull)",
+   "yellow_seconds": 1.15,
+   "tier": "Strong"
+  },
+  {
+   "id": "cry_39",
+   "n": 39,
+   "played": true,
+   "where": "Talk: friendship 101-130, good mood",
+   "yellow_seconds": 1.63,
+   "tier": "Possible"
+  },
+  {
+   "id": "cry_40",
+   "n": 40,
+   "played": true,
+   "where": "Talk: friendship 101-160, bad mood",
+   "yellow_seconds": 1.4,
+   "tier": "Weak"
+  },
+  {
+   "id": "cry_41",
+   "n": 41,
+   "played": false,
+   "where": "",
+   "yellow_seconds": 2.24,
+   "tier": "Weak"
+  },
+  {
+   "id": "cry_42",
+   "n": 42,
+   "played": false,
+   "where": "",
+   "yellow_seconds": 2.0,
+   "tier": "Weak"
+  }
+ ]
+}
