@@ -49,6 +49,15 @@ const S = {
 
 const SPEAKER_ANNOUNCER = "announcer";
 
+// Words an announcer's lines use to name each speaker. The speaker id is
+// the default. Tate and Liza are one speaker in the pack, because the game
+// fights them as a double battle, but a line only ever names one of them.
+const SPEAKER_NAME_WORDS = { tate_and_liza: ["tate", "liza"] };
+const speakerWords = (speaker) => SPEAKER_NAME_WORDS[speaker] || [speaker];
+
+// A speaker id as a person would write it: tate_and_liza becomes "tate and liza".
+const speakerLabel = (speaker) => String(speaker).replace(/_/g, " ");
+
 // ---- derived helpers ----
 
 function slots() {
@@ -946,7 +955,7 @@ async function matchBySound(slotIds, { quiet = false } = {}) {
       S.matchNotes[ref.slot] = top.length
         ? "No clear match by sound. The closest clips are listed below; play the pack's file and compare."
         : S.packType === "milestone" && slotDef && slotDef.speaker
-          ? `Nothing in ${slotDef.speaker}'s zips (or announcer zips) sounds like the pack's file. It may come from a zip you haven't added or tagged.`
+          ? `Nothing in ${speakerLabel(slotDef.speaker)}'s zips (or announcer zips) sounds like the pack's file. It may come from a zip you haven't added or tagged.`
           : "Nothing sounds like the pack's file. It may come from a zip you haven't added.";
     }
   }
@@ -1457,7 +1466,11 @@ function poolClips(slot) {
   }
   // Announcer lines that name this slot's speaker float to the top.
   if (slot && slot.speaker) {
-    const named = (c) => (S.transcripts[c.key] || "").toLowerCase().includes(slot.speaker) ? 0 : 1;
+    const words = speakerWords(slot.speaker);
+    const named = (c) => {
+      const text = (S.transcripts[c.key] || "").toLowerCase();
+      return words.some((w) => text.includes(w)) ? 0 : 1;
+    };
     clips = [...clips].sort((x, y) => named(x) - named(y));
   }
   return clips;
