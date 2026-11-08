@@ -390,6 +390,11 @@ handle("cries:addZips", async () => {
   return { clips, errors };
 });
 
+handle("cries:emotion", async (samples) => {
+  if (!(samples instanceof Float32Array) || samples.length === 0) throw new Error("No audio samples received.");
+  return rpc("emotion", "emotion", { samples });
+});
+
 handle("cries:bytes", (key) => {
   const sid = key.split("::")[0];
   for (const s of criesSets.values()) {

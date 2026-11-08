@@ -42,6 +42,7 @@ contextBridge.exposeInMainWorld("packager", {
   selftest: call("models:selftest"),
   criesInfo: call("cries:info"),
   criesAddZips: call("cries:addZips"),
+  criesEmotion: call("cries:emotion"),
   criesBytes: call("cries:bytes"),
   criesLoadState: call("cries:loadState"),
   criesSaveState: call("cries:saveState"),

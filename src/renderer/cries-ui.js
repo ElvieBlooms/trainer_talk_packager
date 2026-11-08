@@ -3,7 +3,7 @@
 // waveform, pick one per slot, and export trimmed cry_NN.ogg files.
 (() => {
 "use strict";
-const { h, toast } = window.ui;
+const { h, toast, choose: ask } = window.ui;
 const api = window.packager;
 const RATE = 48000;
 const unwrap = (r) => { if (r && r.error) throw new Error(r.error); return r; };
@@ -11,7 +11,7 @@ const unwrap = (r) => { if (r && r.error) throw new Error(r.error); return r; };
 const C = {
   data: null, clips: [], byId: new Map(), original: new Map(),
   pcm: new Map(), info: new Map(), // key -> trimmed { channels, mono16 } / { f, seconds }
-  picks: {}, shortlist: {}, slot: null,
+  picks: {}, shortlist: {}, emotions: {}, emoBusy: "", sameEmotion: false, slot: null,
   sort: "match", source: "all", playedOnly: true, search: "", limit: 40,
   trimmedPreview: true, analyzing: 0, total: 0,
 };
@@ -61,6 +61,48 @@ async function play(clip, { trimmed = C.trimmedPreview } = {}) {
 }
 async function playBoth(slotClip, clip) { await play(slotClip); await new Promise((r) => setTimeout(r, 350)); await play(clip); }
 
+// ---- emotion ----
+// The emotion model is trained on speech, so its reading of a cry is a rough
+// hint about the tone (bright, upset, sleepy), not a verdict.
+const emoKey = (c) => c.set + ":" + c.id;
+function emotionSim(y, c) {
+  const a = y && C.emotions[emoKey(y)], b = C.emotions[emoKey(c)];
+  if (!a || !b) return null;
+  const norm = (l) => { const t = l.reduce((x, e) => x + e.score, 0) || 1; return Object.fromEntries(l.map((e) => [e.label, e.score / t])); };
+  const pa = norm(a), pb = norm(b);
+  return Object.keys(pa).reduce((sum, k) => sum + Math.min(pa[k], pb[k] || 0), 0);
+}
+const emoText = (c) => { const e = C.emotions[emoKey(c)]; return e && e.length ? `${e[0].label} ${Math.round(e[0].score * 100)}%` : ""; };
+
+async function detectEmotion() {
+  const id = "wav2vec2-emotion";
+  const probe = unwrap(await api.probeModel(id));
+  const mb = Math.round((probe.sizeBytes || 0) / 1048576);
+  const go = await ask("Detect emotion in the Pikachu clips?",
+    `This reads every clip with a speech-emotion model (angry, happy, sad and so on). It was trained on human speech, so for cries it is a rough hint about tone, not an answer. ${probe.downloaded ? "The model is already on this computer." : `It downloads the model once (about ${mb} MB).`} It needs about 1.2 GB of memory while it runs.`,
+    [{ label: "Cancel", value: "no" }, { label: probe.downloaded ? "Detect emotion" : "Download and detect", value: "go", primary: true }]);
+  if (go !== "go") return;
+  const todo = C.clips.filter((c) => !C.emotions[emoKey(c)]);
+  if (!todo.length) { toast("Every clip already has an emotion reading."); return; }
+  C.emoBusy = "Loading the emotion model…"; render();
+  try {
+    unwrap(await api.selectModel("emotion", id));
+    unwrap(await api.prepareModel(id));
+    let n = 0;
+    for (const c of todo) {
+      const info = await analyze(c).catch(() => null);
+      if (info) C.emotions[emoKey(c)] = unwrap(await api.criesEmotion(info.wave));
+      if (++n % 10 === 0) { C.emoBusy = `Detecting emotion: ${n} of ${todo.length}`; saveSoon(); render(); await new Promise((r) => setTimeout(r)); }
+    }
+    if (C.sort === "match" || C.sort === "shortlist") C.sort = "blend";
+    toast("Emotion detected. Sort by “Waveform + emotion” to use it.");
+  } finally {
+    C.emoBusy = "";
+    try { await api.unloadModel("emotion"); } catch (_) { /* already gone */ }
+    saveSoon(); render();
+  }
+}
+
 // ---- ranking ----
 function candidates(slot) {
   const y = C.original.get(slot.id);
@@ -73,11 +115,16 @@ function candidates(slot) {
       score = sim ? sim.score : 0;
       delta = ci.seconds - yi.seconds;
     }
-    return { c, ci, score, delta, short: (C.shortlist[slot.id] || []).indexOf(c.id) };
+    const emo = emotionSim(y, c);
+    const blend = score === null ? null : emo === null ? score : 0.65 * score + 0.35 * emo;
+    return { c, ci, score, delta, emo, blend, short: (C.shortlist[slot.id] || []).indexOf(c.id) };
   });
   const q = C.search.trim().toLowerCase();
-  const kept = rows.filter((r) => (C.source === "all" || r.c.set === C.source) && (!q || r.c.id.includes(q)));
+  const yTop = y && C.emotions[emoKey(y)] ? C.emotions[emoKey(y)][0].label : null;
+  const kept = rows.filter((r) => (C.source === "all" || r.c.set === C.source) && (!q || r.c.id.includes(q))
+    && (!C.sameEmotion || !yTop || (C.emotions[emoKey(r.c)] && C.emotions[emoKey(r.c)][0].label === yTop)));
   const by = {
+    blend: (a, b) => (b.blend ?? -1) - (a.blend ?? -1),
     match: (a, b) => (b.score ?? -1) - (a.score ?? -1),
     length: (a, b) => Math.abs(a.delta ?? 99) - Math.abs(b.delta ?? 99),
     shortlist: (a, b) => (a.short < 0 ? 99 : a.short) - (b.short < 0 ? 99 : b.short) || (b.score ?? -1) - (a.score ?? -1),
@@ -105,7 +152,7 @@ function wave(info, secondsScale, w = 220, ht = 34) {
 }
 
 // ---- picks ----
-const saveSoon = (() => { let t; return () => { clearTimeout(t); t = setTimeout(() => api.criesSaveState({ picks: C.picks, shortlist: C.shortlist }), 300); }; })();
+const saveSoon = (() => { let t; return () => { clearTimeout(t); t = setTimeout(() => api.criesSaveState({ picks: C.picks, shortlist: C.shortlist, emotions: C.emotions }), 300); }; })();
 function choose(slotId, pick) { C.picks[slotId] = pick; saveSoon(); render(); }
 function recipe() {
   return { recipe_format: 1, kind: "anime_pikachu_cries", picks: C.picks, ...(Object.keys(C.shortlist).length ? { shortlist: C.shortlist } : {}) };
@@ -159,6 +206,8 @@ function render() {
     h("div", { class: "cries-bar" },
       h("button", { class: "btn primary", onclick: () => run(addZips) }, "Add audio zips"),
       h("span", { class: "muted small" }, C.clips.length ? `${C.clips.length} clips loaded` + (C.analyzing < C.total ? `, measuring ${C.analyzing} of ${C.total}…` : ", all measured") : "Add the Yellow originals, Let's Go and Sword/Shield zips."),
+      C.clips.length ? h("button", { class: "btn small", disabled: !!C.emoBusy, onclick: () => run(detectEmotion) }, Object.keys(C.emotions).length ? "Detect emotion (more)" : "Detect emotion") : null,
+      C.emoBusy ? h("span", { class: "muted small" }, C.emoBusy) : null,
       h("span", { class: "spacer" }),
       h("span", { class: "small" }, `${done} of ${played.length} played slots chosen`),
       h("button", { class: "btn small", onclick: () => run(async () => { const r = unwrap(await api.criesLoadRecipe()); if (r) { applyRecipe(r); render(); toast("Picks loaded."); } }) }, "Load picks"),
@@ -187,15 +236,17 @@ function slotPane(slot) {
     h("div", { class: "cries-row yellow" },
       h("button", { class: "btn", disabled: !y, onclick: () => run(() => play(y)) }, "▶ Yellow original"),
       yi ? wave(yi, Math.max(3, yi.seconds * 1.2)) : h("span", { class: "muted small" }, y ? "measuring…" : "Add the Yellow originals zip"),
+      y && emoText(y) ? h("span", { class: "small mono" }, emoText(y)) : null,
       h("button", { class: p && p.keep ? "btn primary" : "btn", onclick: () => choose(slot.id, { keep: true }) }, "Keep original (no file)"),
       p && h("button", { class: "btn subtle", onclick: () => { delete C.picks[slot.id]; saveSoon(); render(); } }, "Clear")),
     h("div", { class: "cries-filters small" },
       h("label", {}, "Sort ", h("select", { onchange: (e) => { C.sort = e.target.value; render(); } },
-        [["match", "Closest waveform"], ["length", "Closest length"], ...(Object.keys(C.shortlist).length ? [["shortlist", "First-pass shortlist"]] : [])]
+        [["match", "Closest waveform"], ["length", "Closest length"], ...(Object.keys(C.emotions).length ? [["blend", "Waveform + emotion"]] : []), ...(Object.keys(C.shortlist).length ? [["shortlist", "First-pass shortlist"]] : [])]
           .map(([v, t]) => h("option", { value: v, selected: v === C.sort }, t)))),
       h("label", {}, "From ", h("select", { onchange: (e) => { C.source = e.target.value; render(); } },
         [["all", "Everything"], ["lgpe", "Let's Go"], ["swsh", "Sword/Shield"]].map(([v, t]) => h("option", { value: v, selected: v === C.source }, t)))),
       h("label", { class: "check" }, h("input", { type: "checkbox", checked: C.trimmedPreview, onchange: (e) => { C.trimmedPreview = e.target.checked; } }), " Play as exported (trimmed)"),
+      Object.keys(C.emotions).length ? h("label", { class: "check" }, h("input", { type: "checkbox", checked: C.sameEmotion, onchange: (e) => { C.sameEmotion = e.target.checked; C.limit = 40; render(); } }), " Same emotion as Yellow") : null,
       h("input", { type: "search", placeholder: "Find a clip id", value: C.search, oninput: (e) => { C.search = e.target.value; C.limit = 40; clearTimeout(C.st); C.st = setTimeout(render, 250); } })));
   if (!y || !yi) return pane;
   const rows = candidates(slot);
@@ -207,7 +258,8 @@ function slotPane(slot) {
       h("span", { class: "cries-name" }, r.c.label, r.short >= 0 ? h("span", { class: "tag" }, `shortlist ${r.short + 1}`) : null),
       r.ci ? wave(r.ci, Math.max(3, yi.seconds * 1.2)) : h("span", { class: "muted small" }, "…"),
       h("span", { class: "small mono" }, r.ci ? `${r.ci.seconds.toFixed(2)}s (${r.delta >= 0 ? "+" : ""}${r.delta.toFixed(2)})` : ""),
-      h("span", { class: "small mono" }, r.score === null ? "" : `${Math.round(r.score * 100)}%`),
+      h("span", { class: "small muted" }, emoText(r.c)),
+      h("span", { class: "small mono" }, r.score === null ? "" : `${Math.round((C.sort === "blend" ? r.blend : r.score) * 100)}%`),
       h("button", { class: chosen ? "btn small primary" : "btn small", onclick: () => choose(slot.id, { clip: r.c.id }) }, chosen ? "Chosen" : "Use"));
   })));
   if (rows.length > C.limit) pane.append(h("button", { class: "btn", onclick: () => { C.limit += 60; render(); } }, `Show more (${rows.length - C.limit} left)`));
@@ -250,7 +302,7 @@ async function open() {
   if (!C.data) {
     C.data = unwrap(await api.criesInfo());
     const saved = await api.criesLoadState();
-    if (saved && !saved.error && saved.picks) { C.picks = saved.picks; C.shortlist = saved.shortlist || {}; if (Object.keys(C.shortlist).length) C.sort = "shortlist"; }
+    if (saved && !saved.error && saved.picks) { C.picks = saved.picks; C.shortlist = saved.shortlist || {}; C.emotions = saved.emotions || {}; if (Object.keys(C.shortlist).length) C.sort = "shortlist"; }
   }
   render();
 }
