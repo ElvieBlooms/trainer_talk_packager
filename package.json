@@ -1,7 +1,7 @@
 {
   "name": "trainer-talk-packager",
   "productName": "Trainer Talk Packager",
-  "version": "0.12.0",
+  "version": "0.12.1",
   "description": "Builds Trainer Talk voice packs from your own audio zips.",
   "main": "main.js",
   "license": "MIT",
