@@ -37,9 +37,11 @@ jobs:
       - run: npm ci
       - run: npm test
       # electron-builder downloads Electron and its packaging tools from GitHub
-      # and sometimes gets a 504 back. Cache what it fetched, and try the
-      # build up to three times before giving up.
-      - uses: actions/cache@v4
+      # and sometimes gets a 504 back. Try the build up to six times, and
+      # cache what it managed to download even when a build fails, so the
+      # next attempt or run starts further along.
+      - uses: actions/cache/restore@v4
+        id: ebcache
         with:
           path: |
             ~/.cache/electron
@@ -53,12 +55,23 @@ jobs:
       - name: Build installer
         shell: bash
         run: |
-          for attempt in 1 2 3; do
+          for attempt in 1 2 3 4 5 6; do
             npm run ${{ matrix.script }} -- --publish never && exit 0
             echo "Build attempt $attempt failed."
-            sleep $((attempt * 20))
+            sleep $((attempt * 30))
           done
           exit 1
+      - uses: actions/cache/save@v4
+        if: always() && steps.ebcache.outputs.cache-hit != 'true'
+        with:
+          path: |
+            ~/.cache/electron
+            ~/.cache/electron-builder
+            ~/Library/Caches/electron
+            ~/Library/Caches/electron-builder
+            ~\AppData\Local\electron\Cache
+            ~\AppData\Local\electron-builder\Cache
+          key: eb-${{ runner.os }}-${{ hashFiles('package-lock.json') }}
       - uses: actions/upload-artifact@v4
         with:
           name: packager-${{ matrix.os }}
